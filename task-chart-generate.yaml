@@ -1,0 +1,83 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: chart-generate
+  annotations:
+    displayName.zh-CN: "Chart 构建"
+    displayName.en: "Chart Generate"
+    description.zh-CN: "根据 chart 代码仓库生成 Chart 制品"
+    description.en: "Chart Generate"
+    readme.zh-CN: "Chart 构建"
+    readme.en: "Chart Generate"
+    version: "1.0.0"
+    style.icon: "chart"
+  labels:
+    category: CI
+spec:
+  engine: gotpl
+  body: |+
+    script {
+        def alaudaDevopsInstance = alaudaDevops.newInstance()
+        def retryCount = {{ if .retry }}{{ .retry }}{{else}}0{{end}}
+        def repositoryAddr = '{{.imageRepository.repositoryPath}}'.replace("http://","").replace("https://","")
+        def IMAGE_REPO = repositoryAddr
+        def IMAGE_REGISTRY_SERVER = repositoryAddr.replaceAll("/.*","")
+
+        def credentialId = ''
+        credentialId = "{{ .imageRepository.credentialId }}"
+        dir(RELATIVE_DIRECTORY) {
+            container('tools'){
+                retry(retryCount) {
+                    def buildImages = []
+                    withDockerRegistry([credentialsId: credentialId, url: 'https://'+IMAGE_REGISTRY_SERVER]) {
+                      {{- if eq .imageRepository.tag "" }}
+                        def imageRepoTag = "${IMAGE_REPO}:latest"
+                        def image = docker.build("${imageRepoTag}", "-f {{.dockerfile}} {{.buildArguments}} {{ if .context }}{{.context}}{{else}}.{{end}}")
+                        image.push()
+
+                        buildImages.add(imageRepoTag as String)
+                      {{- else }}
+                        def tagswithcomma = "{{.imageRepository.tag}}"
+                        def tags = tagswithcomma.split(",")
+                        def incubatorimage = "${IMAGE_REPO}:${tags[0]}"
+                        def image = docker.build(incubatorimage, "-f {{.dockerfile}} {{.buildArguments}} {{ if .context }}{{.context}}{{else}}.{{end}}")
+                        tags.each { tag ->
+                          image.tag(tag)
+                          image.push(tag)
+
+                          buildImages.add("${IMAGE_REPO}:${tag}" as String)
+                        }
+                      {{- end }}
+                    }
+                    alaudaPipeline.appendInfo(STAGE_NAME, [build_image: buildImages], '_Docker')
+                }
+            }
+        }
+    }
+  arguments:
+    - name: "imageRepository"
+      schema:
+        type: alauda.io/dockerimagerepositorymix
+      required: true
+      display:
+        type: alauda.io/dockerimagerepositorymix
+        name:
+          zh-CN: "镜像仓库"
+          en: Repository
+        description:
+          zh-CN: "选择或者输入镜像仓库"
+          en: ""
+    - name: "Relative"
+      schema:
+        type: string
+      display:
+        type: string
+        name:
+          zh-CN: "相对目录"
+          en: "Relative directory"
+        description:
+          zh-CN: "Chart 文件在代码仓库中的绝对路径"
+          en: ""
+      required: true
+      default: "."
+
