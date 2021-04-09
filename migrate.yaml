@@ -20,7 +20,7 @@ metadata:
   resourceVersion: "705864579"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-alb2
   uid: 2436c261-e696-11ea-8864-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "1"
@@ -54,7 +54,7 @@ metadata:
   resourceVersion: "729325280"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-alauda-container-platform
   uid: 6c230f0e-d488-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "11"
@@ -67,7 +67,7 @@ metadata:
   resourceVersion: "331994883"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-aluada-container-platform
   uid: 8904d973-cd79-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "1"
@@ -95,7 +95,7 @@ metadata:
   resourceVersion: "727832779"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-captain
   uid: dd69dbee-e385-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v3.0-pr: "0"
@@ -111,7 +111,7 @@ metadata:
   resourceVersion: "554358010"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-docker-registry
   uid: 371e333f-ec01-4a7d-951a-c6cdb811d401
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "2"
@@ -126,7 +126,7 @@ data:
   v3.4-alpha: "93"
   v3.4-alphda: "0"
   v3.4-pr: "399"
-  v3.4-release: "34"
+  v3.4-release: "35"
   v3.5-alpha: "29"
   v3.5-pr: "58"
 kind: ConfigMap
@@ -134,10 +134,10 @@ metadata:
   creationTimestamp: "2020-09-18T04:03:42Z"
   name: alauda-gitlab-container-platform-chart-olm
   namespace: acp
-  resourceVersion: "729203329"
+  resourceVersion: "729340250"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-olm
   uid: 13d48f10-0433-407b-b05c-689f38113628
-----
+---
 apiVersion: v1
 data:
   v0.32-release: "0"
@@ -158,7 +158,7 @@ metadata:
   resourceVersion: "697546500"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-virtualization
   uid: a3f202ab-4a52-4590-9f89-8e41a4951066
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -179,7 +179,7 @@ metadata:
   resourceVersion: "485361893"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts
   uid: d34afaa3-d63c-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -206,7 +206,7 @@ metadata:
   resourceVersion: "719568005"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--alb2
   uid: b670ced6-e9e5-488e-935e-b9ae58e0f41c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -233,7 +233,7 @@ metadata:
   resourceVersion: "697541365"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--ceph-rook-ceph
   uid: fa0cdd52-3f6c-47c7-9c54-57811fc8a280
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -261,7 +261,7 @@ metadata:
   resourceVersion: "725526550"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--ceph-rook-operator
   uid: d7dfce57-d14d-4fc4-a445-15b25444cd63
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -289,7 +289,7 @@ metadata:
   resourceVersion: "697770684"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cephfs-provisioner
   uid: 8433bf3c-b861-497c-94f2-44bca582c893
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -321,7 +321,7 @@ metadata:
   resourceVersion: "697538270"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cpaas-calico
   uid: 1fb4e720-1b52-43b3-a9b3-72258d5bebd8
-----
+---
 apiVersion: v1
 data:
   v1.5-alpha: "2"
@@ -348,7 +348,7 @@ metadata:
   resourceVersion: "697538678"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cpaas-kube-ovn
   uid: 4452a7d2-b16d-461d-834b-fc51f8ce5cbb
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -374,7 +374,7 @@ metadata:
   resourceVersion: "591629091"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--csp-csp
   uid: e518f80a-5a7e-4cbd-a1a1-3a218ad40c57
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -403,7 +403,7 @@ metadata:
   resourceVersion: "697797218"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--csp-csp-provisioner
   uid: 965fc40b-821a-41f2-9665-14047909bbea
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -433,7 +433,7 @@ metadata:
   resourceVersion: "697539697"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--nfs-nfs-client-provisioner
   uid: f269be93-707f-49b5-9d8c-72b419f13690
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -461,7 +461,7 @@ metadata:
   resourceVersion: "698313447"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--tapp
   uid: cca685a0-0163-40d2-931e-b81de79515e3
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -489,7 +489,7 @@ metadata:
   resourceVersion: "727536899"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--topolvm
   uid: ebb0d447-585c-4735-a186-9451505b5c56
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "1"
@@ -508,7 +508,7 @@ metadata:
   resourceVersion: "726395480"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-public-charts
   uid: 785c8a53-d404-4b48-884a-135da6231fac
-----
+---
 apiVersion: v1
 data:
   v3.0-alpha: "0"
@@ -520,7 +520,7 @@ metadata:
   resourceVersion: "432381217"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-alauda-lander
   uid: b70873ad-ffb9-49c1-a8f4-7caeca7f99a5
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "4"
@@ -553,7 +553,7 @@ metadata:
   resourceVersion: "728326854"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-aiops
   uid: 06d99653-cfb6-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "41"
@@ -594,7 +594,7 @@ metadata:
   resourceVersion: "729322605"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-base
   uid: 17daab9d-ccb0-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.13-pr: "2"
@@ -625,7 +625,7 @@ metadata:
   resourceVersion: "729321347"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-cluster-base
   uid: 7e360cb8-d548-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "1"
@@ -659,7 +659,7 @@ metadata:
   resourceVersion: "729085592"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-log-agent
   uid: eb88c9df-d061-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.1-release: "0"
@@ -681,7 +681,7 @@ metadata:
   resourceVersion: "728329223"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-base-init
   uid: 894b344a-d2fe-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v1.5-alpha: "1"
@@ -865,8 +865,8 @@ data:
   v3.4-alphas: "0"
   v3.4-alphda: "0"
   v3.4-pr: "87"
-  v3.4-release: "449"
-  v3.5-alpha: "499"
+  v3.4-release: "451"
+  v3.5-alpha: "500"
   v3.5-pr: "7"
   v3.5-release: "0"
 kind: ConfigMap
@@ -874,10 +874,10 @@ metadata:
   creationTimestamp: "2020-08-19T02:28:39Z"
   name: alauda-gitlab-ait-chart-base-operator
   namespace: ait
-  resourceVersion: "729321557"
+  resourceVersion: "729343541"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-base-operator
   uid: b16905e4-e1c3-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.0-pr: "4"
@@ -907,7 +907,7 @@ metadata:
   resourceVersion: "728330254"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cert-manager
   uid: 90c03939-d87c-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-pr: "0"
@@ -933,7 +933,7 @@ metadata:
   resourceVersion: "728337970"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cpaas-fit
   uid: 2960d34f-d548-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-pr: "0"
@@ -957,7 +957,7 @@ metadata:
   resourceVersion: "728335839"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cpaas-lander
   uid: 997a8d96-d547-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "0"
@@ -991,7 +991,7 @@ metadata:
   resourceVersion: "728339947"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cpaas-monitor
   uid: 4b166fbc-d2f1-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v0.3-beta: "0"
@@ -1024,7 +1024,7 @@ metadata:
   resourceVersion: "728330469"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-dex
   uid: 423d37c5-d0a1-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "3"
@@ -1057,7 +1057,7 @@ metadata:
   resourceVersion: "728331545"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-elasticsearch
   uid: 99cfe501-cfea-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-pr: "1"
@@ -1070,7 +1070,7 @@ metadata:
   resourceVersion: "418097641"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-gatekeeper
   uid: 9986983a-e6bf-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.15-pr: "1"
@@ -1082,7 +1082,7 @@ metadata:
   resourceVersion: "418110625"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-gatekeeper-config
   uid: ad3c172b-110d-475a-b8a8-d83e91cc4de2
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "0"
@@ -1096,7 +1096,7 @@ metadata:
   resourceVersion: "541989462"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-gpu-manager
   uid: 107d09c8-f63c-4901-9ea6-617eca8e9175
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "1"
@@ -1127,7 +1127,7 @@ metadata:
   resourceVersion: "728343546"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kafka-zookeeper
   uid: 87dcaa14-d086-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "0"
@@ -1164,7 +1164,7 @@ metadata:
   resourceVersion: "729064228"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kube-prometheus
   uid: 50c64ff4-d2fb-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "13"
@@ -1178,7 +1178,7 @@ metadata:
   resourceVersion: "728345728"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kube-virt
   uid: d498b224-fd90-41a9-9952-01f31db3f8dc
-----
+---
 apiVersion: v1
 data:
   v2.13-release: "1"
@@ -1200,7 +1200,7 @@ metadata:
   resourceVersion: "728345657"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kubefed
   uid: 40a82cb7-d0a1-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.13-pr: "0"
@@ -1215,7 +1215,7 @@ metadata:
   resourceVersion: "728346848"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-nginx-ingress
   uid: 18ed5297-dadf-11ea-8864-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "0"
@@ -1245,7 +1245,7 @@ metadata:
   resourceVersion: "728347169"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-prometheus-operator
   uid: 3635d929-d2fd-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-release: "0"
@@ -1266,7 +1266,7 @@ metadata:
   resourceVersion: "728347164"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-reloader
   uid: 652cced4-e2b2-11ea-8864-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "0"
@@ -1298,7 +1298,7 @@ metadata:
   resourceVersion: "728337073"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-sentry
   uid: 7a38eeae-cfd6-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.14-beta: "0"
@@ -1320,7 +1320,7 @@ metadata:
   resourceVersion: "718335478"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-asm-init
   uid: a1d7f95b-e33f-11ea-8864-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "13"
@@ -1348,7 +1348,7 @@ metadata:
   resourceVersion: "719967496"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-cluster-asm
   uid: 0db7e755-d6dc-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v1.0-alpha: "2"
@@ -1368,7 +1368,7 @@ metadata:
   resourceVersion: "591093326"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-consul
   uid: 78b971f8-ece4-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "1"
@@ -1386,7 +1386,7 @@ metadata:
   resourceVersion: "521632854"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-flagger
   uid: c23ae04c-d6e5-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.13-pr: "0"
@@ -1416,7 +1416,7 @@ metadata:
   resourceVersion: "729298186"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-global-asm
   uid: ba61e270-d6cb-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-beta: "1"
@@ -1441,7 +1441,7 @@ metadata:
   resourceVersion: "718339773"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-istio-install
   uid: bc48dc43-e1c6-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "1"
@@ -1459,7 +1459,7 @@ metadata:
   resourceVersion: "718340034"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-jaeger-operator
   uid: 1c7c40b6-d6e8-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.0-alpha: "0"
@@ -1478,7 +1478,7 @@ metadata:
   resourceVersion: "591309938"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-kong
   uid: 5a422b21-edd3-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "23"
@@ -1504,7 +1504,7 @@ metadata:
   resourceVersion: "729274086"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-ares-chart
   uid: 2c1cb75b-cd88-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "3"
@@ -1526,7 +1526,7 @@ metadata:
   resourceVersion: "697466392"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-chart-artemis
   uid: bf1f313f-cd99-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -1542,7 +1542,7 @@ metadata:
   resourceVersion: "699987393"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-chart-helloworld
   uid: b557b21b-e46f-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v3.2-alpha: "8"
@@ -1558,7 +1558,7 @@ metadata:
   resourceVersion: "710422601"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-redis-benchmark-chart
   uid: 63c458d5-d0df-4b30-a081-7c966d1d0781
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "2"
@@ -1587,7 +1587,7 @@ metadata:
   resourceVersion: "726417158"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-stability-chart
   uid: 1e700545-cccb-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "15"
@@ -1600,7 +1600,7 @@ metadata:
   resourceVersion: "389086435"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart
   uid: 0fbc07c6-ddfa-11ea-8864-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "16"
@@ -1621,7 +1621,7 @@ metadata:
   resourceVersion: "488679901"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-artifacts
   uid: 423fad9a-ec11-11ea-886a-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "15"
@@ -1642,7 +1642,7 @@ metadata:
   resourceVersion: "488683906"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-base
   uid: e210fa4b-ee6a-11ea-a845-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "15"
@@ -1663,7 +1663,7 @@ metadata:
   resourceVersion: "468453364"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-cd
   uid: 12ab96dd-ee6b-11ea-a845-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "15"
@@ -1684,7 +1684,7 @@ metadata:
   resourceVersion: "495729123"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-ci
   uid: a17f6f02-ee6b-11ea-a845-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "15"
@@ -1705,7 +1705,7 @@ metadata:
   resourceVersion: "468462173"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-testing
   uid: 53358ae2-ee6c-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "5"
@@ -1723,7 +1723,7 @@ metadata:
   resourceVersion: "498163943"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-operator-chart
   uid: 644868c9-d7c3-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "47"
@@ -1737,18 +1737,18 @@ data:
   v3.3-release: "51"
   v3.4-alpha: "105"
   v3.4-pr: "443"
-  v3.4-release: "34"
-  v3.5-alpha: "34"
+  v3.4-release: "35"
+  v3.5-alpha: "35"
   v3.5-pr: "53"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2020-09-04T03:46:53Z"
   name: alauda-gitlab-alauda-operator-manifests
   namespace: common
-  resourceVersion: "729120575"
+  resourceVersion: "729339951"
   selfLink: /api/v1/namespaces/common/configmaps/alauda-gitlab-alauda-operator-manifests
   uid: 45529830-ee61-11ea-886a-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "56"
@@ -1779,7 +1779,7 @@ metadata:
   resourceVersion: "729221895"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-chart
   uid: 0207dbc4-d640-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "1"
@@ -1797,14 +1797,14 @@ metadata:
   resourceVersion: "729330222"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator
   uid: 7bdbd23d-64c0-47ad-b5af-e73f780bbab1
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "0"
   v3.3-pr: "0"
   v3.3-release: "0"
   v3.4-alpha: "1"
-  v3.4-pr: "20"
+  v3.4-pr: "21"
   v3.4-release: "0"
   v3.5-pr: "10"
 kind: ConfigMap
@@ -1812,10 +1812,10 @@ metadata:
   creationTimestamp: "2020-12-23T08:39:22Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-gitea
   namespace: devops
-  resourceVersion: "729328926"
+  resourceVersion: "729331424"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitea
   uid: 8cc3c441-dc5e-4ab3-87ec-f6fe5b9d7195
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "1"
@@ -1835,7 +1835,7 @@ metadata:
   resourceVersion: "725076078"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitlab-ce
   uid: cf3db0af-c7e4-48ab-963c-959f1a169882
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "1"
@@ -1854,14 +1854,14 @@ metadata:
   resourceVersion: "729330285"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitlab-official
   uid: dcf72633-7c36-4730-b72c-3c813c0b1edb
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "1"
   v3.3-pr: "0"
   v3.3-release: "0"
   v3.4-alpha: "3"
-  v3.4-pr: "48"
+  v3.4-pr: "49"
   v3.4-release: "2"
   v3.5-alpha: "1"
   v3.5-pr: "11"
@@ -1873,10 +1873,10 @@ metadata:
   creationTimestamp: "2021-01-04T17:17:14Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-harbor
   namespace: devops
-  resourceVersion: "729328932"
+  resourceVersion: "729330903"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-harbor
   uid: a391cf82-8dd5-48e5-bc0f-49ff5516cf36
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "16"
@@ -1895,7 +1895,7 @@ metadata:
   resourceVersion: "729329388"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-jenkins
   uid: 58ac046a-a6df-422c-a7a5-d715fbffffca
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "0"
@@ -1912,7 +1912,7 @@ metadata:
   resourceVersion: "729330204"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-nexus
   uid: 3ec1b20a-401a-4217-867a-e216e4513336
-----
+---
 apiVersion: v1
 data:
   v3.3-alpha: "0"
@@ -1929,7 +1929,7 @@ metadata:
   resourceVersion: "729330619"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-testlink
   uid: 4f8b6807-a523-450e-be5e-79413873d930
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "15"
@@ -1955,7 +1955,7 @@ metadata:
   resourceVersion: "719626730"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-jenkins-chart
   uid: 36f92f31-d85f-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -1972,7 +1972,7 @@ metadata:
   resourceVersion: "432514264"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart
   uid: a5e57310-e03b-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -1998,7 +1998,7 @@ metadata:
   resourceVersion: "728326929"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--devenv
   uid: c11234d0-edc0-11ea-886a-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -2023,7 +2023,7 @@ metadata:
   resourceVersion: "632728750"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--gitea
   uid: f28ce078-fcb1-4d82-8fd3-32fa69816bc6
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -2049,7 +2049,7 @@ metadata:
   resourceVersion: "687797291"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--gitlab-ce
   uid: bec2819c-935e-490b-833d-747f73f7cdf4
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -2076,7 +2076,7 @@ metadata:
   resourceVersion: "545273606"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--harbor
   uid: 15d85198-c2dc-48c2-b0bc-e7e06babde55
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -2106,7 +2106,7 @@ metadata:
   resourceVersion: "634092976"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--nexus
   uid: ac5cd072-6ab4-412f-87a1-72168471c58e
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -2132,7 +2132,7 @@ metadata:
   resourceVersion: "634096614"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--sonarqube
   uid: c86dc421-195d-47c4-b6e6-b0add35b66f8
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "2"
@@ -2156,7 +2156,7 @@ metadata:
   resourceVersion: "545273611"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--testlink
   uid: c5cab399-0b8d-4689-b1c7-1452028890d4
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "3"
@@ -2169,7 +2169,7 @@ metadata:
   resourceVersion: "327318015"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-another-chart
   uid: 64b6dbdf-cb04-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.5-beta: "0"
@@ -2197,7 +2197,7 @@ metadata:
   resourceVersion: "428550912"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test
   uid: 511da40c-c586-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.5-beta: "0"
@@ -2234,7 +2234,7 @@ metadata:
   resourceVersion: "575612566"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test--another
   uid: 1012e6c0-3164-461c-8c39-b765ec9ad01c
-----
+---
 apiVersion: v1
 data:
   v2.5-beta: "0"
@@ -2271,7 +2271,7 @@ metadata:
   resourceVersion: "595840714"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test--chart
   uid: 55bc1af3-64c8-4430-8508-64e267323a0e
-----
+---
 apiVersion: v1
 data:
   v3.0-release: "0"
@@ -2284,7 +2284,7 @@ metadata:
   resourceVersion: "432536998"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-cmq-installer-chart
   uid: 75044d4e-786d-4ddc-8566-f451948dd7e8
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "0"
@@ -2296,7 +2296,7 @@ metadata:
   resourceVersion: "394229904"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-couchdb
   uid: 8bce49d5-e90e-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "0"
@@ -2309,7 +2309,7 @@ metadata:
   resourceVersion: "467298627"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-memcached
   uid: e9ab7825-9d36-45bb-bb78-38b466b23f8d
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "6"
@@ -2323,7 +2323,7 @@ metadata:
   resourceVersion: "575425363"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-middleware-product-list-chart
   uid: 37ba1c98-e8fa-11ea-8864-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "0"
@@ -2335,7 +2335,7 @@ metadata:
   resourceVersion: "424401894"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-pmem-redis
   uid: 3facf1a3-66e7-4b6a-8b5d-7cccb4b88f63
-----
+---
 apiVersion: v1
 data:
   v2.15-alpha: "1"
@@ -2348,7 +2348,7 @@ metadata:
   resourceVersion: "432662696"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-pmem-redis-chart
   uid: c17ad1b4-fda7-4b03-8e1a-9330672be32d
-----
+---
 apiVersion: v1
 data:
   v3.4-alpha: "0"
@@ -2361,7 +2361,7 @@ metadata:
   resourceVersion: "669314731"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-rds-chart
   uid: 00aaf2fb-ec88-4e10-9836-63192fd9a955
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "0"
@@ -2384,7 +2384,7 @@ metadata:
   resourceVersion: "685011619"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-redis-installer-chart
   uid: 3382785f-d24d-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "10"
@@ -2411,7 +2411,7 @@ metadata:
   resourceVersion: "685010028"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-tdsql-installer-chart
   uid: 2d69e478-cd6f-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.14-alpha: "5"
@@ -2427,7 +2427,7 @@ metadata:
   resourceVersion: "385316928"
   selfLink: /api/v1/namespaces/timatrix/configmaps/alauda-gitlab-bigdata-ai-chart-ti-matrix-installer
   uid: 0d66b304-d54d-11ea-b53c-525400a3909c
-----
+---
 apiVersion: v1
 data:
   v2.13-pr: "1"
@@ -2440,7 +2440,7 @@ metadata:
   resourceVersion: "338376555"
   selfLink: /api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-init
   uid: 72275cb5-d0bd-11ea-a82a-525400df0ff6
-----
+---
 apiVersion: v1
 data:
   v1.18-beta: "0"
@@ -2461,7 +2461,7 @@ metadata:
   resourceVersion: "475021022"
   selfLink: /api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-operator
   uid: 5dd13277-d08b-11ea-b715-5254000741bd
-----
+---
 apiVersion: v1
 data:
   v2.13-alpha: "0"
@@ -2476,4 +2476,4 @@ metadata:
   resourceVersion: "344958305"
   selfLink: /api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-region
   uid: 9a7bc171-d0bd-11ea-a82a-525400df0ff6
-----
+---
