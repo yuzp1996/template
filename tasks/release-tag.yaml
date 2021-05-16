@@ -34,7 +34,9 @@ spec:
               sh script: "git tag -l | grep ^${env.VERSION}\$ || git tag ${env.VERSION} -m 'auto add release tag by jenkins pipeline ${JOB_NAME} ${BUILD_NUMBER}'", label: "tagging git repository "
               sh script: "git push ${repo} --tags", label: "pushing git repository"
             }
-        }
+        } else {
+            echo "Skip...."
+          }
 
     }
   arguments: []
