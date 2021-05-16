@@ -3,13 +3,13 @@ kind: ClusterPipelineTaskTemplate
 metadata:
   name: generate-component-version
   annotations:
-    displayName.zh-CN: 生产组建版本号
+    displayName.zh-CN: zpyu 生产组建版本号
     displayName.en: Generate component version
     description.zh-CN: 生产可用的组建版本
     description.en: Generates a component version for pipeline
     readme.zh-CN: 自动生成组建版本并保存成 VERSION 环境变量
     readme.en: Generates a component version and sets in VERSION envvar
-    version: "0.0.12"
+    version: "0.0.13"
     style.icon: "shell"
   labels:
     category: Versioning
