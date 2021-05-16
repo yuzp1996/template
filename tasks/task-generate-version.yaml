@@ -1,0 +1,108 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: generate-component-version
+  annotations:
+    displayName.zh-CN: 生产组建版本号
+    displayName.en: Generate component version
+    description.zh-CN: 生产可用的组建版本
+    description.en: Generates a component version for pipeline
+    readme.zh-CN: 自动生成组建版本并保存成 VERSION 环境变量
+    readme.en: Generates a component version and sets in VERSION envvar
+    version: "0.0.12"
+    style.icon: "shell"
+  labels:
+    category: Versioning
+spec:
+  engine: gotpl
+  body: |+
+    script {
+        def shellScript = ''
+        def shellLabel = ''
+        def branchName = ''
+        def acpVersion = sh script: "kubectl get configmap -n cpaas-system version-ctrl -o=jsonpath='{.data.acp-version}'", label: "get the acp-version", returnStdout: true
+        def generatedVersion = ''
+        if (env.GIT_BRANCH) {
+          branchName = env.GIT_BRANCH.replace("origin/", "").replace("/", "-").replace("_", "-").toLowerCase()
+        } else {
+          error "Please use the git clone task before this task to clone code repository"
+        }
+        // branching name follow this convention http://confluence.alauda.cn/x/sgC7Ag
+        // if branch is not:
+        // - custom release (release-1.3-hw)
+        // - release (release-1.3)
+        // - master
+        // - main
+        def timestamp = new Date().format("yyMMddHHmm")
+
+        if (!(branchName ==~ /release-\d+\.\d+/ || branchName ==~ /release-\d+\.\d+-.*/ || branchName == "master" || branchName == "main")) {
+          // Here the branch name is the prefix for the version followed by a sequential number
+          // the current implementation is a simplified form, which will use the build number
+          // this should be changed to record and use a real sequential number
+          generatedVersion = "${branchName}.${timestamp}"
+          env.VERSION_TYPE = "dev"
+        // main or master branch
+        } else if (branchName == "master" || branchName == "main") {
+          shellScript = "git describe --dirty --always --tags --long --match ${acpVersion}"
+          shellLabel = '使用 git describe 生产 master 版本'
+          env.VERSION_TYPE = "master"
+        // release branch
+        } else if (branchName ==~ /release-\d+\.\d+/) {
+          def versionPrefix = branchName.replace("release-", "v")
+          shellScript = "gitversion patch ${versionPrefix}"
+          shellLabel = '使用 gitversion 和 git tag 生产 release 版本'
+          env.VERSION_TYPE = "release"
+        // custom release branch
+        } else if (branchName ==~ /release-\d+\.\d+-.*/) {
+          def versionPrefix = branchName =~ /release-(\d+\.\d)+-.*/
+          versionPrefix = "v"+versionPrefix[0][1]
+
+          customPrefix = branchName.replaceFirst(/release-\d+\.\d+/, "")
+          if (customPrefix.startsWith("-")) {
+            customPrefix = customPrefix.replaceFirst("-", "")
+          }
+          versionPrefix = versionPrefix + ".0-" + customPrefix
+
+          shellScript = "gitversion patch ${versionPrefix}"
+          shellLabel = '使用 gitversion 和 git tag 生产 定制 release 版本'
+          env.VERSION_TYPE = "custom-release"
+        }
+        
+        // TODO: Add branch checks and generation
+        if (!generatedVersion && shellScript) {
+          if (!shellLabel) {
+             shellLabel = shellScript
+          }
+          container('tools') {
+              if (env.RELATIVE_DIRECTORY) {
+                  dir(env.RELATIVE_DIRECTORY) {
+                      generatedVersion = sh script: shellScript, label: shellLabel, returnStdout: true
+                  }
+              } else {
+                  generatedVersion = sh script: shellScript, label: shellLabel, returnStdout: true
+              }
+          }
+        }
+        if (!generatedVersion.trim()) {
+          error "Did not generate version, please report customer incident"
+        }
+        env.VERSION = generatedVersion.trim()
+        container('tools') {
+          sh label: 'generated version: ${env.VERSION} -- type: ${env.VERSION_TYPE}', script: "echo ${env.VERSION}"
+        }
+        currentBuild.description = env.VERSION
+    }
+  arguments: []
+  exports:
+    - name: VERSION
+      description:
+        zh-CN: "生产的版本号"
+        en: "Generated version"
+    - name: VERSION_TYPE
+      description:
+        zh-CN: "版本类型flag：\"master\" 为 master分支， \"release\" 为 release 分支，\"custom-release\" 为定制 release， \"dev\" 为其它版本"
+        en: "flag for version type: \"master\" for master, \"release\" for release branch, \"custom-release\" for custom release branch, \"dev\" for other branches"
+  dependencies:
+    plugins:
+      - name: workflow-basic-steps
+        version: "2.9"

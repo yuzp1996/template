@@ -1,0 +1,252 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: chart-update
+  annotations:
+    displayName.zh-CN: 更新Chart
+    displayName.en: Update Chart
+    description.zh-CN: 更新Chart信息：版本，组件版本等
+    description.en: Update Chart's data
+    readme.zh-CN: 更新Chart信息：版本，组件版本等
+    readme.en: Update Chart's data like appVersion, componentVersion, chartVersion etc
+    version: "0.0.76"
+  labels:
+    category: Chart
+spec:
+  engine: gotpl
+  body: |+
+    script{
+      container('tools') {
+         def enableCommit = {{ .enableCommit }}
+         def imagesCommand = ""
+         def chartsCommand = ""
+         def retryCount = {{ if .retry }}{{ .retry }}{{else}}0{{end}}
+
+
+         sh script: """
+           export HELM_HOME=/ && mkdir -p /plugins/helm-devops && rm -rf /plugins/helm-devops/*
+           curl -L https://build-nexus.alauda.cn/repository/third-party/helm/plugin.yaml -o /plugins/helm-devops/plugin.yaml
+           curl -L https://build-nexus.alauda.cn/repository/third-party/helm/helm-devops-linux-amd64.zip -o /plugins/helm-devops/helm-devops-linux-amd64.zip
+           unzip -o /plugins/helm-devops/helm-devops-linux-amd64.zip -d /plugins/helm-devops
+           chmod +x /plugins/helm-devops/helm-devops-linux-amd64
+           helm devops version
+         """, label: "Prepare for helm-devops"
+
+         // used for helm-devops generating related version
+         def branchForVersion = ""
+
+         if (params.branchName != null && "${branchName}" != "") {
+             branchForVersion = "${branchName}".replace("/", "-").replace("_", "-").toLowerCase()
+
+             // uesd for git commit in the final step
+             env.FINALBRANCH = "${branchName}"
+         } else {
+             branchForVersion = env.GIT_BRANCH.replace("origin/","").replace("/", "-").replace("_", "-").toLowerCase()
+
+             // uesd for git commit in the final step
+             env.FINALBRANCH =  env.GIT_BRANCH.replace("origin/","")
+         }
+
+         sh script: "git checkout ${FINALBRANCH}"
+
+         def repoName = "{{.CodeRepo.bindingRepositoryName}}"
+         def chartPath = "{{.ChartDirectory}}"
+
+         {{- if .MultipleCharts }}
+         def repoAndChartPath = "${repoName.trim()}-${chartPath.trim()}".replace(" ","").replace("/", "-").replace(".", "")
+         {{- else }}
+         def repoAndChartPath = "${repoName.trim()}".replace(" ","")
+         {{- end }}
+
+
+         def credentialsId = '{{.HarborCredentials}}'
+
+         withCredentials([usernamePassword(credentialsId: credentialsId, passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+
+             if (params.overRideImages != null && "${overRideImages}" != "") {
+                imagesCommand = "helm devops fetch --path={{.ChartDirectory}} --branch=${branchForVersion} --type=images --data=${overRideImages} --username=${USER} --password=${PASS}"
+             } else {
+                imagesCommand = "helm devops fetch --path={{.ChartDirectory}} --branch=${branchForVersion} --type=images --username=${USER} --password=${PASS}"
+             }
+
+             if (params.overRideCharts != null && "${overRideCharts}" != "") {
+                 chartsCommand = "helm devops fetch --path={{.ChartDirectory}} --branch=${branchForVersion} --type=charts --data=${overRideCharts} --username=${USER} --password=${PASS}"
+             } else {
+                 chartsCommand = "helm devops fetch --path={{.ChartDirectory}} --branch=${branchForVersion} --type=charts --username=${USER} --password=${PASS}"
+             }
+
+             retry(retryCount){
+               def images = sh (script: imagesCommand, label: "get images with tag", returnStdout: true).trim()
+               if (images != ""){
+                 sh script: "helm devops update --path={{.ChartDirectory}} --type=images --data=${images}", label: "helm devops update --path={{.ChartDirectory}} --type=images --data=${images}"
+               }
+               def charts = sh (script: chartsCommand, label: "get charts with tag", returnStdout: true).trim()
+               if (charts != ""){
+                    sh script: "helm devops update --path={{.ChartDirectory}} --type=charts --data=${charts}", label: "helm devops update --path={{.ChartDirectory}} --type=charts --data=${charts}"
+               }
+               chartVersion = sh (script: "helm devops fetch --path={{.ChartDirectory}} --branch=${branchForVersion} --name=${repoAndChartPath}  --ns=${alaudaContext.getNamespace()} --type=chart ", label: "helm devops fetch --path={{.ChartDirectory}} --branch=${branchForVersion} --name=${repoAndChartPath}  --ns=${alaudaContext.getNamespace()} --type=chart", returnStdout: true).trim()
+               sh script: "helm devops update --path={{.ChartDirectory}} --type=chart --data=version=${chartVersion}", label: "helm devops update --path={{.ChartDirectory}} --type=chart --data=version=${chartVersion}"
+
+
+               def chartRepoProject = '{{.HarborProject}}'
+               def harborAddress = "{{.HarborAddress}}"
+               def ociBasePath = harborAddress.replace("https://", "").replace("http://", "")
+
+               sh script: "git status && git diff"
+
+               sh script: "HELM_EXPERIMENTAL_OCI=1 helm3 registry login -u ${USER} -p ${PASS} ${harborAddress}", label: "helm3 registry login"
+               chartName = sh (script: "yq r {{.ChartDirectory}}/Chart.yaml name", returnStdout: true, label: "getting chart name").trim()
+
+               def ociArtifactPath = ociBasePath + chartRepoProject + "/chart-"+chartName.trim().toLowerCase() + ":" + chartVersion
+               sh script: "export HELM_EXPERIMENTAL_OCI=1 && helm3 chart save {{.ChartDirectory}} ${ociArtifactPath} && helm3 chart push ${ociArtifactPath}", label: "helm3 chart save && push ${ociArtifactPath}"
+               alaudaPipeline.appendInfo(STAGE_NAME, [chartname: ociArtifactPath],'_Chart')
+
+           }
+         if (enableCommit) {
+              if (env.GIT_BRANCH) {
+                localBranch = env.FINALBRANCH
+              } else {
+                error "Please use the git clone task before this task to clone code repository"
+              }
+              if (localBranch ==~ /release-\d+\.\d+/ || localBranch == "master" || localBranch == "main"){
+                withCredentials([usernamePassword(credentialsId: "cpaas-system-global-credentials-alaudabot", passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+                  def replaceKey = "https://"
+                  if (env.CODE_REPO.contains("http://")) {
+                    replaceKey = "http://"
+                  }
+                  def trimedUrl = (env.CODE_REPO.replace(replaceKey, ""))
+                  sh script: """
+                  git config --global user.email "alaudabot@alauda.io"
+                  git config --global user.name "New Build Alauda Bot"
+                  """, label: "configuring git to use alauda bot user data: git config --global"
+                  repo = "${replaceKey}${USER}:${PASS}@${trimedUrl}"
+                  sh script: "git fetch --tags ${repo}", label: "fetching git tags..." // retrieve all tags
+                  sh script: "git pull ${repo} ${localBranch} && git commit --allow-empty -am 'Auto-commit by new build jenkins'", label: "commiting to git repository"
+                  sh script: "git push ${repo}", label: "pushing git repository"
+                  }
+              }
+           }
+
+         }
+      }
+    }
+  arguments:
+    - name: "CodeRepo"
+      schema:
+        type: alauda.io/coderepositorymix
+      required: true
+      display:
+        type: alauda.io/coderepositorymix
+        name:
+          zh-CN: "代码仓库"
+          en: Code Repository
+        description:
+          zh-CN: "选择已为项目分配的代码仓库"
+          en: "Select a code repository for the project."
+    - name: "ChartDirectory"
+      schema:
+        type: string
+      required: true
+      default: "."
+      display:
+        type: string
+        name:
+          zh-CN: "Chart目录"
+          en: Chart Directory
+        description:
+          zh-CN: "请输入Chart所在文件的目录"
+          en: "Specify a folder where the chart's files are stored"
+    - name: "HarborProject"
+      schema:
+        type: string
+      required: true
+      default: ""
+      display:
+        type: string
+        name:
+          zh-CN: "Harbor Project"
+          en: "Harbor Project"
+        description:
+          zh-CN: "Harbor Project"
+          en: "Harbor Project"
+    - name: "HarborAddress"
+      schema:
+        type: string
+      required: false
+      default: "https://build-harbor.alauda.cn/"
+      display:
+        type: string
+        name:
+          zh-CN: "HarborAddress"
+          en: HarborAddress
+        description:
+          zh-CN: "默认为 https://build-harbor.alauda.cn/"
+          en: "HarborAddress"
+    - name: "retry"
+      schema:
+        type: string
+      display:
+        type: string
+        name:
+          zh-CN: "重试次数"
+          en: "Retry Times"
+        description:
+          zh-CN: "生成 chart 时的失败重试次数"
+          en: ""
+      required: false
+      default: "3"
+    - name: "HarborCredentials"
+      schema:
+        type: string
+      required: false
+      default: "cpaas-system-global-credentials-harbor"
+      display:
+        type: string
+        name:
+          zh-CN: "Harbor Credentials"
+          en: "Harbor Credentials"
+        description:
+          zh-CN: "Harbor Credentials"
+          en: "Harbor Credentials"
+    - name: "enableCommit"
+      schema:
+        type: boolean
+      display:
+        type: boolean
+        name:
+          zh-CN: "是否Commit"
+          en: "commit to repo"
+        description:
+          zh-CN: "是否将修改提交到代码仓库，且只对 master 和 release 分支生效，其他分支不生效"
+          en: "Whether to commit change to git repo, only work for master and release"
+      required: false
+      default: "false"
+    - name: "MultipleCharts"
+      schema:
+        type: boolean
+      required: false
+      default: "false"
+      display:
+        type: boolean
+        name:
+          zh-CN: "此代码仓库维护多个chart"
+          en: "Code repository has multiple charts"
+        description:
+          zh-CN: "此代码仓库维护多个chart，所以需要单独维护不同的chart的版本"
+          en: "Code repository has multiple charts, and needs to have different sequential numbers"
+  dependencies:
+    plugins:
+      - name: alauda-devops-pipeline
+        version: "1.0.0"
+      - name: workflow-basic-steps
+        version: "2.9"
+  view:
+    markdown: |-
+      {{ if eq $item.type "_Chart"}}
+      ## {{$item.name}}
+
+      | Name | Value |
+      | :--- | :---- |
+      | Chart地址 | {{$item.value.chartname}} |
+
+      {{ end}}

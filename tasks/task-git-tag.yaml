@@ -1,0 +1,96 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: gitTag
+  namespace: default
+  annotations:
+    displayName.zh-CN: "Git Tag"
+    displayName.en: "Git Tag"
+    description.zh-CN: "Git Tag"
+    description.en: "Git Tag"
+    version: "0.0.1"
+    style.icon: "git"
+  labels:
+    category: Versioning
+spec:
+  engine: gotpl
+  body: |+
+    script {
+        def credentialsId = "{{ .CodeRepository.credentialId }}"
+        def repoURL = "{{ .CodeRepository.url }}"
+        def tagString = "{{ .Tags }}"
+        def tags = tagString.split(",")
+        def annotated = {{ .Annotated }}
+        def commit = "{{ .Commit }}"
+        if (tags.length > 0) {
+            withCredentials([usernamePassword(credentialsId: credentialsId, passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+                sh script: """
+                    git config --global user.email "alaudabot@alauda.io"
+                    git config --global user.name "Alauda Bot"
+                """, label: "configuring git to use alauda bot user data: git config --global"
+                repoURL = repoURL.replace("://", "://${GIT_USERNAME}:${GIT_PASSWORD}@")
+                sh script: "git fetch --tags ${repoURL}", label: "fetch git tag"
+                for (tag in tags) {
+                    sh script: "git tag -l | grep ^${tag}\$ || git tag ${annotated?"-a":""} ${tag} ${commit} -m 'auto add release tag by jenkins'", label: "tagging git repository with ${tag}"
+                }
+                sh script: "git push ${repoURL} --tags", label: "pushing git repository"
+            }
+        } else {
+            sh script: "echo tag is empty, continue", label: "tag is empty, continue"
+        }
+    }
+  arguments:
+    - name: "CodeRepository"
+      schema:
+        type: alauda.io/coderepositorymix
+      required: true
+      display:
+        type: alauda.io/coderepositorymix
+        name:
+          zh-CN: "代码仓库"
+          en: RepositoryPath
+        description:
+          zh-CN: "请选择或输入要检出的代码仓库"
+          en: "Select a code repository for the project."
+    - name: "Tags"
+      schema:
+        type: string
+      display:
+        type: string
+        name:
+          zh-CN: "Git tags"
+          en: "Git tags"
+        description:
+          zh-CN: "自定义tag，用逗号增加多条，如 v1.0,v2.0,v3.0"
+          en: ""
+      required: false
+      default: ''
+    - name: "Annotated"
+      schema:
+        type: boolean
+      display:
+        type: boolean
+        advanced: true
+        name:
+          zh-CN: "使用附注标签"
+          en: "Use annotated"
+        description:
+          zh-CN: "开启选项，使用附注标签。关闭选项使用轻量标签"
+          en: "Turn on the option, use annotated. Turn off the option and use lightweight"
+      required: false
+      default: "true"
+    - name: "Commit"
+      schema:
+        type: string
+      display:
+        type: string
+        advanced: true
+        name:
+          zh-CN: "指定commit"
+          en: "Specify commit"
+        description:
+          zh-CN: "指定标签的commit, 默认为最新"
+          en: "Commit with the specified label, the default is the latest"
+      required: false
+      default: ''
+      

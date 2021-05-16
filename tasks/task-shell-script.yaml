@@ -1,0 +1,65 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: shell-script
+  annotations:
+    displayName.zh-CN: Shell脚本
+    displayName.en: Shell script
+    description.zh-CN: 执行shell脚本
+    description.en: Runs a shell script
+    readme.zh-CN: 制定一个容器来执行shell脚本
+    readme.en: Specifies a container to execute a shell script
+    version: "0.0.3"
+    style.icon: "docker"
+  labels:
+    category: Scripting
+spec:
+  engine: gotpl
+  body: |+
+    script {
+        def containerName = "{{.container}}"
+        def shellScript = """{{.shellScript}}"""
+        if (!containerName) {
+            error "container name must be provided"
+        }
+        container(containerName) {
+            if (env.RELATIVE_DIRECTORY) {
+                dir(env.RELATIVE_DIRECTORY) {
+                    sh script: shellScript, label: shellScript
+                }
+            } else {
+                sh script: shellScript, label: shellScript
+            }
+        }
+    }
+  arguments:
+    - name: "container"
+      schema:
+        type: string
+      display:
+        type: string
+        name:
+          zh-CN: "容器名称"
+          en: "container name"
+        description:
+          zh-CN: "指定pod内具体容器来执行脚本"
+          en: "specifies specific container in pod to run the script"
+      required: true
+      default: 'tools'
+    - name: "shellScript"
+      schema:
+        type: string
+      display:
+        type: code
+        name:
+          zh-CN: "shell脚本"
+          en: "shell script"
+        description:
+          zh-CN: "执行的shell脚本"
+          en: "shell script to execute"
+      required: true
+      default: ''
+  dependencies:
+    plugins:
+      - name: workflow-basic-steps
+        version: "2.9"

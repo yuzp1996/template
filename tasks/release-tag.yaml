@@ -1,0 +1,40 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: image-component-release-tag
+  annotations:
+    displayName.zh-CN: 为镜像组件 release 分支增加 tag
+    displayName.en: tag for image component
+    description.zh-CN: 镜像组建的release的版本号需要通过tag进行计算 该任务就是为release分支增加版本号而制定的
+    description.en: tag for component release branch
+    readme.zh-CN: 镜像组建的release的版本号需要通过tag进行计算 该任务就是为release分支增加版本号而制定的
+    readme.en: tag for component release branch
+    version: "0.0.1"
+  labels:
+    category: Versioning
+spec:
+  engine: gotpl
+  body: |+
+    script {
+        if (env.VERSION_TYPE == "custom-release" || env.VERSION_TYPE == "release"){
+          withCredentials([usernamePassword(credentialsId: "cpaas-system-global-credentials-alaudabot", passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+              def replaceKey = "https://"
+              if (env.CODE_REPO.contains("http://")) {
+                replaceKey = "http://"
+              }
+              def trimedUrl = (env.CODE_REPO.replace(replaceKey, ""))
+              repo = "${replaceKey}${USER}:${PASS}@${trimedUrl}"
+
+              sh script: """
+                 git config --global user.email "alaudabot@alauda.io"
+                 git config --global user.name "Alauda Bot"
+              """, label: "configuring git to use alauda bot user data: git config --global"
+
+              sh script: "git fetch --tags ${repo}", label: "fetching git tags..." // retrieve all tags
+              sh script: "git tag -l | grep ^${env.VERSION}\$ || git tag ${env.VERSION} -m 'auto add release tag by jenkins pipeline ${JOB_NAME} ${BUILD_NUMBER}'", label: "tagging git repository "
+              sh script: "git push ${repo} --tags", label: "pushing git repository"
+            }
+        }
+
+    }
+  arguments: []

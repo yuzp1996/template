@@ -1,0 +1,45 @@
+apiVersion: devops.alauda.io/v1alpha1
+kind: ClusterPipelineTaskTemplate
+metadata:
+  name: groovy-script
+  annotations:
+    displayName.zh-CN: Groovy脚本
+    displayName.en: Groovy script
+    description.zh-CN: 执行groovy脚本
+    description.en: Runs a groovy script
+    readme.zh-CN: 制定一个容器来执行groovy脚本
+    readme.en: Execute a groovy script
+    version: "0.0.1"
+    style.icon: "docker"
+  labels:
+    category: Scripting
+spec:
+  engine: gotpl
+  body: |+
+    script {
+        def script = '''{{.groovyScript}}'''
+        try {
+            evaluate(script)
+        } catch (exc) {
+            echo "groovy command error. err: ${exc} cmd: ${script}"
+            throw exc
+        }
+    }
+  arguments:
+    - name: "groovyScript"
+      schema:
+        type: string
+      display:
+        type: code
+        name:
+          zh-CN: "groovy脚本"
+          en: "groovy script"
+        description:
+          zh-CN: "执行的groovy脚本"
+          en: "groovy script to execute"
+      required: true
+      default: ''
+  dependencies:
+    plugins:
+      - name: workflow-basic-steps
+        version: "2.9"
