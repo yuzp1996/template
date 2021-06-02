@@ -10,16 +10,59 @@ data:
   v3.3-release: "13"
   v3.4-alpha: "8"
   v3.4-release: "4"
-  v3.5-alpha: "0"
+  v3.5-alpha: "32"
   v3.5-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-25T05:45:11Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-release: {}
+        f:v3.0-release: {}
+        f:v3.0.8-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+        f:v3.5-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-04-26T09:09:40Z"
   name: alauda-gitlab-container-platform-alb2
   namespace: acp
-  resourceVersion: "705864579"
+  resourceVersion: "147672138"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-alb2
-  uid: 2436c261-e696-11ea-8864-525400a3909c
+  uid: a14d9ae2-145a-4a9f-abde-4b73c59f0abf
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-13T07:11:41Z"
+  name: alauda-gitlab-container-platform-cephfs-provisioner
+  namespace: acp
+  resourceVersion: "139393232"
+  selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-cephfs-provisioner
+  uid: 8e1d1d0a-618e-4c65-a968-779b30566a05
 ---
 apiVersion: v1
 data:
@@ -44,16 +87,58 @@ data:
   v3.4-alpha: "115"
   v3.4-pr: "827"
   v3.4-release: "56"
-  v3.5-alpha: "27"
+  v3.5-alpha: "2278"
   v3.5-pr: "104"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-02T06:21:38Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpah: {}
+        f:v2.15-alpha: {}
+        f:v2.15-beta: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-04-23T04:32:51Z"
   name: alauda-gitlab-container-platform-chart-alauda-container-platform
   namespace: acp
-  resourceVersion: "729325280"
+  resourceVersion: "156132407"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-alauda-container-platform
-  uid: 6c230f0e-d488-11ea-b53c-525400a3909c
+  uid: b577ef56-7aec-4e16-b964-9809371e7dd7
 ---
 apiVersion: v1
 data:
@@ -61,12 +146,26 @@ data:
   v2.13-pr: "26"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-24T06:47:26Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-chart-aluada-container-platform
   namespace: acp
-  resourceVersion: "331994883"
+  resourceVersion: "99451953"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-aluada-container-platform
-  uid: 8904d973-cd79-11ea-b53c-525400a3909c
+  uid: cd346e99-59c5-44ea-ae14-387b7e8f3628
 ---
 apiVersion: v1
 data:
@@ -89,12 +188,41 @@ data:
   v3.5-pr: "6"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-21T08:11:07Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-chart-captain
   namespace: acp
-  resourceVersion: "727832779"
+  resourceVersion: "99451955"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-captain
-  uid: dd69dbee-e385-11ea-b715-5254000741bd
+  uid: bcf6d213-0c33-4e17-90f9-850ba86ea80f
 ---
 apiVersion: v1
 data:
@@ -105,12 +233,29 @@ data:
   v3.3-pr: "6"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-22T06:30:11Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-chart-docker-registry
   namespace: acp
-  resourceVersion: "554358010"
+  resourceVersion: "99451956"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-docker-registry
-  uid: 371e333f-ec01-4a7d-951a-c6cdb811d401
+  uid: 87a8b4ac-87d5-45d3-8901-e6c11fa2f7d0
 ---
 apiVersion: v1
 data:
@@ -127,16 +272,50 @@ data:
   v3.4-alphda: "0"
   v3.4-pr: "399"
   v3.4-release: "35"
-  v3.5-alpha: "29"
+  v3.5-alpha: "45"
   v3.5-pr: "58"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-18T04:03:42Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0.2-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-alphda: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-26T02:02:56Z"
   name: alauda-gitlab-container-platform-chart-olm
   namespace: acp
-  resourceVersion: "729340250"
+  resourceVersion: "156042741"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-olm
-  uid: 13d48f10-0433-407b-b05c-689f38113628
+  uid: a46e16b7-cdec-426e-91b1-b802abbfe17a
 ---
 apiVersion: v1
 data:
@@ -152,12 +331,34 @@ data:
   v3.4-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-15T07:51:51Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v0.32-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-chart-virtualization
   namespace: acp
-  resourceVersion: "697546500"
+  resourceVersion: "99451958"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-chart-virtualization
-  uid: a3f202ab-4a52-4590-9f89-8e41a4951066
+  uid: 422b1d07-1d73-4047-8bf3-7e2fa6c1df66
 ---
 apiVersion: v1
 data:
@@ -171,14 +372,45 @@ data:
   v2.15.0-release: "0"
   v3.0-release: "5"
   v3.2-alpha: "0"
+  v3.5-alpha: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-04T10:25:31Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-11T02:53:20Z"
   name: alauda-gitlab-container-platform-charts
   namespace: acp
-  resourceVersion: "485361893"
+  resourceVersion: "146764930"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts
-  uid: d34afaa3-d63c-11ea-b715-5254000741bd
+  uid: 196bf52f-b9c3-44cc-8414-e8ebea4703ba
 ---
 apiVersion: v1
 data:
@@ -198,14 +430,42 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5","v3.2-alpha":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--alb2","namespace":"acp","resourceVersion":"485361893","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2021-03-25T09:21:51Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5","v3.2-alpha":"0","v3.5-alpha":"3","v3.5-pr":"1","v3.5-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2021-03-25T09:21:51Z","name":"alauda-gitlab-container-platform-charts--alb2","namespace":"acp","resourceVersion":"719568005","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--alb2","uid":"b670ced6-e9e5-488e-935e-b9ae58e0f41c"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+        f:v3.5-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-charts--alb2
   namespace: acp
-  resourceVersion: "719568005"
+  resourceVersion: "99451960"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--alb2
-  uid: b670ced6-e9e5-488e-935e-b9ae58e0f41c
+  uid: cc97f557-7150-414e-809a-1a662257a4a6
 ---
 apiVersion: v1
 data:
@@ -225,14 +485,42 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--ceph-rook-ceph","namespace":"acp","resourceVersion":"422951911","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-09-20T11:53:49Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"1","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"4","v3.3-pr":"4","v3.3-release":"0","v3.3.0-pr-26-pr":"0","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-20T11:53:49Z","name":"alauda-gitlab-container-platform-charts--ceph-rook-ceph","namespace":"acp","resourceVersion":"697541365","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--ceph-rook-ceph","uid":"fa0cdd52-3f6c-47c7-9c54-57811fc8a280"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.3.0-pr-26-pr: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-charts--ceph-rook-ceph
   namespace: acp
-  resourceVersion: "697541365"
+  resourceVersion: "99451961"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--ceph-rook-ceph
-  uid: fa0cdd52-3f6c-47c7-9c54-57811fc8a280
+  uid: f0e76586-ebb5-4f82-86ae-ad4be12ffc87
 ---
 apiVersion: v1
 data:
@@ -253,14 +541,43 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--ceph-rook-operator","namespace":"acp","resourceVersion":"422951911","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-09-20T11:53:49Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"1","v2.15-pr":"4","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"3","v3.3-release":"0","v3.4-alpha":"0","v3.4-pr":"4","v3.4-release":"0","v3.4.0-pr-pr":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-20T11:53:49Z","name":"alauda-gitlab-container-platform-charts--ceph-rook-operator","namespace":"acp","resourceVersion":"725526550","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--ceph-rook-operator","uid":"d7dfce57-d14d-4fc4-a445-15b25444cd63"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.4.0-pr-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-charts--ceph-rook-operator
   namespace: acp
-  resourceVersion: "725526550"
+  resourceVersion: "99451962"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--ceph-rook-operator
-  uid: d7dfce57-d14d-4fc4-a445-15b25444cd63
+  uid: cf77bf72-5ff1-4007-8af9-ea988b2ef23d
 ---
 apiVersion: v1
 data:
@@ -281,14 +598,43 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--cephfs-provisioner","namespace":"acp","resourceVersion":"422951911","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-09-20T11:38:09Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"1","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-pr":"0","v3.0-release":"6","v3.2-alpha":"4","v3.2-pr":"13","v3.3-release":"0","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-20T11:38:09Z","name":"alauda-gitlab-container-platform-charts--cephfs-provisioner","namespace":"acp","resourceVersion":"697770684","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cephfs-provisioner","uid":"8433bf3c-b861-497c-94f2-44bca582c893"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-charts--cephfs-provisioner
   namespace: acp
-  resourceVersion: "697770684"
+  resourceVersion: "99451963"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cephfs-provisioner
-  uid: 8433bf3c-b861-497c-94f2-44bca582c893
+  uid: 20cb5418-a1c7-4670-81ce-df53b924ffa3
 ---
 apiVersion: v1
 data:
@@ -310,17 +656,59 @@ data:
   v3.4-alpha: "9"
   v3.4-pr: "9"
   v3.4-release: "0"
+  v3.5-alpha: "1"
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--cpaas-calico","namespace":"acp","resourceVersion":"475140946","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-10-21T03:56:56Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-pr":"0","v3.0-release":"14","v3.2-alpha":"2","v3.2-pr":"6","v3.3-alpha":"2","v3.3-pr":"9","v3.3-release":"0","v3.4-alpha":"9","v3.4-pr":"9","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-10-21T03:56:56Z","name":"alauda-gitlab-container-platform-charts--cpaas-calico","namespace":"acp","resourceVersion":"697538270","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cpaas-calico","uid":"1fb4e720-1b52-43b3-a9b3-72258d5bebd8"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-24T11:16:24Z"
   name: alauda-gitlab-container-platform-charts--cpaas-calico
   namespace: acp
-  resourceVersion: "697538270"
+  resourceVersion: "146765002"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cpaas-calico
-  uid: 1fb4e720-1b52-43b3-a9b3-72258d5bebd8
+  uid: a1d50b8a-237c-4788-b2f8-89618d17b60d
 ---
 apiVersion: v1
 data:
@@ -340,14 +728,42 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--cpaas-kube-ovn","namespace":"acp","resourceVersion":"475140946","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-10-21T03:57:17Z"
+      {"apiVersion":"v1","data":{"v1.5-alpha":"2","v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"7","v3.3-release":"0","v3.4-alpha":"0","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-10-21T03:57:17Z","name":"alauda-gitlab-container-platform-charts--cpaas-kube-ovn","namespace":"acp","resourceVersion":"697538678","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cpaas-kube-ovn","uid":"4452a7d2-b16d-461d-834b-fc51f8ce5cbb"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v1.5-alpha: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-charts--cpaas-kube-ovn
   namespace: acp
-  resourceVersion: "697538678"
+  resourceVersion: "99451965"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--cpaas-kube-ovn
-  uid: 4452a7d2-b16d-461d-834b-fc51f8ce5cbb
+  uid: 4c2d57c8-303c-4476-aef5-fc83c513eb1e
 ---
 apiVersion: v1
 data:
@@ -366,14 +782,41 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:24Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--csp-csp","namespace":"acp","resourceVersion":"475140946","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-10-21T01:56:57Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"8","v3.2-alpha":"0","v3.2-pr":"0","v3.3-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-10-21T01:56:57Z","name":"alauda-gitlab-container-platform-charts--csp-csp","namespace":"acp","resourceVersion":"591629091","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--csp-csp","uid":"e518f80a-5a7e-4cbd-a1a1-3a218ad40c57"}}
+  creationTimestamp: "2021-04-09T09:56:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:24Z"
   name: alauda-gitlab-container-platform-charts--csp-csp
   namespace: acp
-  resourceVersion: "591629091"
+  resourceVersion: "99451966"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--csp-csp
-  uid: e518f80a-5a7e-4cbd-a1a1-3a218ad40c57
+  uid: ae6e78b7-9034-48e4-a561-10a510c4bf3d
 ---
 apiVersion: v1
 data:
@@ -395,14 +838,44 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--csp-csp-provisioner","namespace":"acp","resourceVersion":"422951911","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-09-20T11:38:09Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"1","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-pr":"0","v3.0-release":"5","v3.2-alpha":"4","v3.2-pr":"13","v3.3-pr":"0","v3.3-release":"0","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-20T11:38:09Z","name":"alauda-gitlab-container-platform-charts--csp-csp-provisioner","namespace":"acp","resourceVersion":"697797218","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--csp-csp-provisioner","uid":"965fc40b-821a-41f2-9665-14047909bbea"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-container-platform-charts--csp-csp-provisioner
   namespace: acp
-  resourceVersion: "697797218"
+  resourceVersion: "99451967"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--csp-csp-provisioner
-  uid: 965fc40b-821a-41f2-9665-14047909bbea
+  uid: f52f2f02-4879-41c8-b386-861b9a5bcccc
 ---
 apiVersion: v1
 data:
@@ -425,14 +898,45 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--nfs-nfs-client-provisioner","namespace":"acp","resourceVersion":"422951911","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-09-20T11:38:09Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"1","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-pr":"0","v3.0-release":"9","v3.2-alpha":"2","v3.2-pr":"1","v3.3-release":"2","v3.4-alpha":"0","v3.4-pr":"0","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-20T11:38:09Z","name":"alauda-gitlab-container-platform-charts--nfs-nfs-client-provisioner","namespace":"acp","resourceVersion":"697539697","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--nfs-nfs-client-provisioner","uid":"f269be93-707f-49b5-9d8c-72b419f13690"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-container-platform-charts--nfs-nfs-client-provisioner
   namespace: acp
-  resourceVersion: "697539697"
+  resourceVersion: "99451968"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--nfs-nfs-client-provisioner
-  uid: f269be93-707f-49b5-9d8c-72b419f13690
+  uid: 4d8137b7-003e-433b-b685-93bcf27c8748
 ---
 apiVersion: v1
 data:
@@ -453,14 +957,43 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5","v3.2-alpha":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--tapp","namespace":"acp","resourceVersion":"485361893","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-12-29T10:40:39Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5","v3.2-alpha":"0","v3.3-alpha":"4","v3.3-pr":"2","v3.3-release":"0","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-12-29T10:40:39Z","name":"alauda-gitlab-container-platform-charts--tapp","namespace":"acp","resourceVersion":"698313447","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--tapp","uid":"cca685a0-0163-40d2-931e-b81de79515e3"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-container-platform-charts--tapp
   namespace: acp
-  resourceVersion: "698313447"
+  resourceVersion: "99451969"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--tapp
-  uid: cca685a0-0163-40d2-931e-b81de79515e3
+  uid: f194d7db-794a-4866-942e-52a10e77deb0
 ---
 apiVersion: v1
 data:
@@ -481,14 +1014,55 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5","v3.2-alpha":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-04T10:25:31Z","name":"alauda-gitlab-container-platform-charts--topolvm","namespace":"acp","resourceVersion":"485361893","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts","uid":"d34afaa3-d63c-11ea-b715-5254000741bd"}}
-  creationTimestamp: "2020-12-16T05:33:14Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"6","v2.14-pr":"15","v2.14-release":"17","v2.14.0-release":"0","v2.15-alpha":"0","v2.15-pr":"3","v2.15-release":"1","v2.15.0-release":"0","v3.0-release":"5","v3.2-alpha":"0","v3.3-alpha":"1","v3.3-pr":"2","v3.4-pr":"2","v3.5-pr":"11"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-12-16T05:33:14Z","name":"alauda-gitlab-container-platform-charts--topolvm","namespace":"acp","resourceVersion":"727536899","selfLink":"/api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--topolvm","uid":"ebb0d447-585c-4735-a186-9451505b5c56"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.15.0-release: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.4-pr: {}
+        f:v3.5-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-container-platform-charts--topolvm
   namespace: acp
-  resourceVersion: "727536899"
+  resourceVersion: "99451970"
   selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-charts--topolvm
-  uid: ebb0d447-585c-4735-a186-9451505b5c56
+  uid: 0f248694-8381-4506-b203-0aa948754b83
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "7"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-24T11:51:59Z"
+  name: alauda-gitlab-container-platform-nfs-client-provisioner
+  namespace: acp
+  resourceVersion: "146801049"
+  selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-nfs-client-provisioner
+  uid: ed00c0a4-c71a-4165-8fb6-69b6a6409ef8
 ---
 apiVersion: v1
 data:
@@ -498,28 +1072,80 @@ data:
   v3.3-alpha: "0"
   v3.3-release: "2"
   v3.4-alpha: "0"
-  v3.4-release: "3"
+  v3.4-release: "4"
+  v3.5-alpha: "12"
+kind: ConfigMap
+metadata:
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+        f:v3.0-hw: {}
+        f:v3.0-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-04-29T06:31:47Z"
+  name: alauda-gitlab-container-platform-public-charts
+  namespace: acp
+  resourceVersion: "140351728"
+  selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-public-charts
+  uid: 58d28636-1699-4e27-b805-1a3232cfeaa9
+---
+apiVersion: v1
+data:
   v3.5-alpha: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-18T03:49:34Z"
-  name: alauda-gitlab-container-platform-public-charts
+  creationTimestamp: "2021-05-25T03:18:05Z"
+  name: alauda-gitlab-container-platform-tapp
   namespace: acp
-  resourceVersion: "726395480"
-  selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-public-charts
-  uid: 785c8a53-d404-4b48-884a-135da6231fac
+  resourceVersion: "147473856"
+  selfLink: /api/v1/namespaces/acp/configmaps/alauda-gitlab-container-platform-tapp
+  uid: 9fbc7e4a-c0dd-4427-91e8-be1df5cf9d70
 ---
 apiVersion: v1
 data:
   v3.0-alpha: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-21T05:55:43Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.0-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-alauda-lander
   namespace: ait
-  resourceVersion: "432381217"
+  resourceVersion: "99451193"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-alauda-lander
-  uid: b70873ad-ffb9-49c1-a8f4-7caeca7f99a5
+  uid: 3ae62e0f-6658-4b87-8c08-6eabfcc245f5
 ---
 apiVersion: v1
 data:
@@ -543,16 +1169,57 @@ data:
   v3.4-alpha: "90"
   v3.4-pr: "68"
   v3.4-release: "3"
-  v3.5-alpha: "19"
+  v3.5-alpha: "38"
   v3.5-pr: "34"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-27T03:05:29Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-relase: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-19T08:05:56Z"
   name: alauda-gitlab-ait-chart-alauda-aiops
   namespace: ait
-  resourceVersion: "728326854"
+  resourceVersion: "156041984"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-aiops
-  uid: 06d99653-cfb6-11ea-b715-5254000741bd
+  uid: 3e504b93-2955-477c-9a38-b8d90458a653
 ---
 apiVersion: v1
 data:
@@ -584,16 +1251,65 @@ data:
   v3.4-alpha: "262"
   v3.4-pr: "971"
   v3.4-release: "74"
-  v3.5-alpha: "60"
+  v3.5-alpha: "81"
   v3.5-pr: "157"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-23T06:45:27Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15.0-alpha.25-alpha: {}
+        f:v2.15.0-alpha.26-alpha: {}
+        f:v2.16-pr: {}
+        f:v2.16-release: {}
+        f:v3.0-alpha: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0.0-pr.95-pr: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.2.0-pr.zlc95-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-beta: {}
+        f:v3.3-or: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-14T09:27:25Z"
   name: alauda-gitlab-ait-chart-alauda-base
   namespace: ait
-  resourceVersion: "729322605"
+  resourceVersion: "156044209"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-base
-  uid: 17daab9d-ccb0-11ea-a82a-525400df0ff6
+  uid: 7d9761cc-52aa-4feb-b5fa-50c9b6a50cd1
 ---
 apiVersion: v1
 data:
@@ -615,16 +1331,55 @@ data:
   v3.4-alpha: "122"
   v3.4-pr: "330"
   v3.4-release: "17"
-  v3.5-alpha: "24"
+  v3.5-alpha: "41"
   v3.5-pr: "31"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-03T05:16:32Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-21T08:14:22Z"
   name: alauda-gitlab-ait-chart-alauda-cluster-base
   namespace: ait
-  resourceVersion: "729321347"
+  resourceVersion: "156042229"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-cluster-base
-  uid: 7e360cb8-d548-11ea-a82a-525400df0ff6
+  uid: 89c5f79e-a6fe-4901-b6c3-092c300703fe
 ---
 apiVersion: v1
 data:
@@ -649,16 +1404,58 @@ data:
   v3.4-alpha: "80"
   v3.4-pr: "40"
   v3.4-release: "2"
-  v3.5-alpha: "17"
+  v3.5-alpha: "190"
   v3.5-pr: "2"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-27T23:35:57Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.13.0-pr-pr.10.1-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-releae: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-18T05:52:31Z"
   name: alauda-gitlab-ait-chart-alauda-log-agent
   namespace: ait
-  resourceVersion: "729085592"
+  resourceVersion: "156043260"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-alauda-log-agent
-  uid: eb88c9df-d061-11ea-b715-5254000741bd
+  uid: f42d60cd-b4dd-4d86-9fd4-003c7133983c
 ---
 apiVersion: v1
 data:
@@ -675,12 +1472,35 @@ data:
   v3.5-alpha: "16"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-31T07:22:05Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.1-release: {}
+        f:v2.13-alpha: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v3.0-release: {}
+        f:v3.1-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-chart-base-init
   namespace: ait
-  resourceVersion: "728329223"
+  resourceVersion: "99451198"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-base-init
-  uid: 894b344a-d2fe-11ea-b53c-525400a3909c
+  uid: 66062f61-bbe5-463e-a192-a9b8f680e1dd
 ---
 apiVersion: v1
 data:
@@ -866,17 +1686,221 @@ data:
   v3.4-alphda: "0"
   v3.4-pr: "87"
   v3.4-release: "451"
-  v3.5-alpha: "500"
+  v3.5-alpha: "520"
   v3.5-pr: "7"
-  v3.5-release: "0"
+  v3.5-release: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-19T02:28:39Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v1.5-alpha: {}
+        f:v2.4-alpha: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v3.0-alpha: {}
+        f:v3.0-beta: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0.0-hw.0-hw: {}
+        f:v3.0.0-hw.1-hw: {}
+        f:v3.0.0-hw.2-hw: {}
+        f:v3.0.0-hw.3-hw: {}
+        f:v3.0.0-hw.4-hw: {}
+        f:v3.0.0-hw.5-hw: {}
+        f:v3.0.0-hw.6-hw: {}
+        f:v3.0.0-hw.7-hw: {}
+        f:v3.0.0-hw.8-hw: {}
+        f:v3.0.0-hw.9-hw: {}
+        f:v3.0.0-hw.10-hw: {}
+        f:v3.0.1-release: {}
+        f:v3.0.2-release: {}
+        f:v3.0.3-hw-alpha: {}
+        f:v3.0.3-hw-release: {}
+        f:v3.0.3-release: {}
+        f:v3.0.4-release: {}
+        f:v3.0.5-release: {}
+        f:v3.0.6-release: {}
+        f:v3.0.7-release: {}
+        f:v3.0.8-release: {}
+        f:v3.0.9-release: {}
+        f:v3.0.10-release: {}
+        f:v3.0.11-release: {}
+        f:v3.0.12-release: {}
+        f:v3.0.16-release: {}
+        f:v3.0.17-release: {}
+        f:v3.0.24-release: {}
+        f:v3.0.25-release: {}
+        f:v3.0.29-release: {}
+        f:v3.0.101-release: {}
+        f:v3.0.147-release: {}
+        f:v3.0.148-release: {}
+        f:v3.0.149-release: {}
+        f:v3.0.150-release: {}
+        f:v3.0.151-release: {}
+        f:v3.0.152-release: {}
+        f:v3.0.154-release: {}
+        f:v3.1-alpha: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.2.0-alpha.1-release: {}
+        f:v3.2.0-test-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-beta: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.3.0-alpha.0-alpha: {}
+        f:v3.3.0-alpha.0-release: {}
+        f:v3.3.0-alpha.1-alpha: {}
+        f:v3.3.0-alpha.1-release: {}
+        f:v3.3.0-alpha.2-alpha: {}
+        f:v3.3.0-alpha.3-alpha: {}
+        f:v3.3.0-alpha.4-alpha: {}
+        f:v3.3.0-alpha.5-alpha: {}
+        f:v3.3.0-alpha.6-alpha: {}
+        f:v3.3.0-alpha.7-alpha: {}
+        f:v3.3.0-alpha.8-alpha: {}
+        f:v3.3.0-alpha.9-alpha: {}
+        f:v3.3.0-alpha.10-alpha: {}
+        f:v3.3.0-alpha.11-alpha: {}
+        f:v3.3.0-alpha.12-alpha: {}
+        f:v3.3.0-alpha.13-alpha: {}
+        f:v3.3.0-alpha.14-alpha: {}
+        f:v3.3.0-alpha.22-release: {}
+        f:v3.3.0-alpha.23-alpha: {}
+        f:v3.3.0-alpha.24-alpha: {}
+        f:v3.3.0-alpha.25-alpha: {}
+        f:v3.3.0-alpha.26-alpha: {}
+        f:v3.3.0-alpha.27-alpha: {}
+        f:v3.3.0-alpha.28-alpha: {}
+        f:v3.3.0-alpha.29-alpha: {}
+        f:v3.3.0-alpha.33-alpha: {}
+        f:v3.3.0-alpha.34-alpha: {}
+        f:v3.3.0-alpha.35-alpha: {}
+        f:v3.3.0-alpha.36-alpha: {}
+        f:v3.3.0-alpha.37-alpha: {}
+        f:v3.3.0-alpha.38-alpha: {}
+        f:v3.3.0-alpha.39-alpha: {}
+        f:v3.3.0-alpha.40-alpha: {}
+        f:v3.3.0-alpha.41-alpha: {}
+        f:v3.3.0-alpha.42-alpha: {}
+        f:v3.3.0-alpha.43-alpha: {}
+        f:v3.3.0-alpha.44-alpha: {}
+        f:v3.3.0-alpha.45-alpha: {}
+        f:v3.3.0-alpha.46-alpha: {}
+        f:v3.3.0-alpha.47-alpha: {}
+        f:v3.3.0-alpha.48-alpha: {}
+        f:v3.3.0-alpha.49-alpha: {}
+        f:v3.3.0-alpha.50-alpha: {}
+        f:v3.3.0-alpha.51-alpha: {}
+        f:v3.3.0-alpha.52-alpha: {}
+        f:v3.3.0-alpha.53-alpha: {}
+        f:v3.3.0-alpha.54-alpha: {}
+        f:v3.3.0-alpha.55-alpha: {}
+        f:v3.3.0-alpha.56-alpha: {}
+        f:v3.3.0-alpha.57-alpha: {}
+        f:v3.3.0-alpha.92-release: {}
+        f:v3.3.0-alpha.93-alpha: {}
+        f:v3.3.0-alpha.94-alpha: {}
+        f:v3.3.0-alpha.95-alpha: {}
+        f:v3.3.0-alpha.96-alpha: {}
+        f:v3.3.0-alpha.97-alpha: {}
+        f:v3.3.0-alpha.98-alpha: {}
+        f:v3.3.0-alpha.99-alpha: {}
+        f:v3.3.0-alpha.100-alpha: {}
+        f:v3.3.0-alpha.101-alpha: {}
+        f:v3.3.0-alpha.102-alpha: {}
+        f:v3.3.0-alpha.103-alpha: {}
+        f:v3.3.0-alpha.104-alpha: {}
+        f:v3.3.0-alpha.105-alpha: {}
+        f:v3.3.0-alpha.106-alpha: {}
+        f:v3.3.0-alpha.107-alpha: {}
+        f:v3.3.0-alpha.108-alpha: {}
+        f:v3.3.0-alpha.109-alpha: {}
+        f:v3.3.0-alpha.110-alpha: {}
+        f:v3.3.0-alpha.111-alpha: {}
+        f:v3.3.0-alpha.114-alpha: {}
+        f:v3.3.0-pr.7-pr: {}
+        f:v3.3.0-pr.22-pr: {}
+        f:v3.3.0-pr.25-pr: {}
+        f:v3.3.0-pr.26-pr: {}
+        f:v3.3.0-pr.99-pr: {}
+        f:v3.3.0-pr.100-pr: {}
+        f:v3.3.0-pr.101-pr: {}
+        f:v3.3.0-pr.102-pr: {}
+        f:v3.3.0-pr.103-pr: {}
+        f:v3.3.0-pr.177-pr: {}
+        f:v3.3.0-pr.178-pr: {}
+        f:v3.3.0-pr.192-pr: {}
+        f:v3.3.0-pr.193-pr: {}
+        f:v3.3.0-pr.194-pr: {}
+        f:v3.3.0-pr.195-pr: {}
+        f:v3.3.0-pr.196-pr: {}
+        f:v3.3.0-pr.197-pr: {}
+        f:v3.3.0-pr.200-pr: {}
+        f:v3.3.0-pr.202-pr: {}
+        f:v3.3.0-pr.203-pr: {}
+        f:v3.3.0-pr.207-pr: {}
+        f:v3.3.0-pr.208-pr: {}
+        f:v3.3.0-pr.265-pr: {}
+        f:v3.3.0-pr.266-pr: {}
+        f:v3.3.0-pr.267-pr: {}
+        f:v3.3.0-pr.268-pr: {}
+        f:v3.3.0-pr.269-pr: {}
+        f:v3.3.0-pr.270-pr: {}
+        f:v3.3.0-pr.271-pr: {}
+        f:v3.3.0-pr.272-pr: {}
+        f:v3.3.0-pr.273-pr: {}
+        f:v3.3.0-pr.274-pr: {}
+        f:v3.3.0-pr.275-pr: {}
+        f:v3.3.0-pr.420-pr: {}
+        f:v3.3.0-pr.421-pr: {}
+        f:v3.3.0-pr.422-pr: {}
+        f:v3.3.0-pr.423-pr: {}
+        f:v3.3.0-pr.424-pr: {}
+        f:v3.3.0-pr.425-pr: {}
+        f:v3.3.0-pr.426-pr: {}
+        f:v3.3.0-pr.427-pr: {}
+        f:v3.3.0-pr.428-pr: {}
+        f:v3.3.0-pr.429-pr: {}
+        f:v3.3.0-pr.430-pr: {}
+        f:v3.3.0-pr.431-pr: {}
+        f:v3.3.0-release: {}
+        f:v3.3.1-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-alphas: {}
+        f:v3.4-alphda: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+        f:v3.5-release: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-30T02:12:48Z"
   name: alauda-gitlab-ait-chart-base-operator
   namespace: ait
-  resourceVersion: "729343541"
+  resourceVersion: "156044398"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-base-operator
-  uid: b16905e4-e1c3-11ea-b715-5254000741bd
+  uid: 84423ae4-4f5e-4f76-ae89-60d1bc115be0
 ---
 apiVersion: v1
 data:
@@ -901,12 +1925,43 @@ data:
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-07T07:06:50Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.0-pr: {}
+        f:v2.13-alpha: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-alpha: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0.3-hw-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-chart-cert-manager
   namespace: ait
-  resourceVersion: "728330254"
+  resourceVersion: "99451200"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cert-manager
-  uid: 90c03939-d87c-11ea-b53c-525400a3909c
+  uid: 504fb8e1-326d-4fb0-a78b-1362704cb5e2
 ---
 apiVersion: v1
 data:
@@ -924,15 +1979,49 @@ data:
   v3.3-release: "1"
   v3.4-alpha: "72"
   v3.4-release: "0"
-  v3.5-alpha: "16"
+  v3.5-alpha: "63"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-03T05:14:09Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-05-11T05:20:19Z"
+  creationTimestamp: "2021-04-09T02:49:21Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T02:49:21Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-11T05:21:31Z"
   name: alauda-gitlab-ait-chart-cpaas-fit
   namespace: ait
-  resourceVersion: "728337970"
+  resourceVersion: "156041855"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cpaas-fit
-  uid: 2960d34f-d548-11ea-b53c-525400a3909c
+  uid: 277266d4-ccfe-470b-83c0-dfa1c69f14b0
 ---
 apiVersion: v1
 data:
@@ -951,12 +2040,37 @@ data:
   v3.5-alpha: "17"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-03T05:10:08Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v3.0-alpha: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-chart-cpaas-lander
   namespace: ait
-  resourceVersion: "728335839"
+  resourceVersion: "99451201"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cpaas-lander
-  uid: 997a8d96-d547-11ea-a82a-525400df0ff6
+  uid: 3387b906-475f-469b-b592-0635c202eb04
 ---
 apiVersion: v1
 data:
@@ -985,12 +2099,47 @@ data:
   v3.5-pr: "34"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-31T05:47:17Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-beta: {}
+        f:v3.0-cmb: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-chart-cpaas-monitor
   namespace: ait
-  resourceVersion: "728339947"
+  resourceVersion: "99451202"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-cpaas-monitor
-  uid: 4b166fbc-d2f1-11ea-a82a-525400df0ff6
+  uid: 09c4d930-2f7d-4ce1-ae90-726ba9528cf7
 ---
 apiVersion: v1
 data:
@@ -1014,16 +2163,57 @@ data:
   v3.4-alpha: "78"
   v3.4-pr: "17"
   v3.4-release: "3"
-  v3.5-alpha: "17"
+  v3.5-alpha: "68"
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-28T07:09:20Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v0.3-beta: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-13T05:50:56Z"
   name: alauda-gitlab-ait-chart-dex
   namespace: ait
-  resourceVersion: "728330469"
+  resourceVersion: "156043591"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-dex
-  uid: 423d37c5-d0a1-11ea-b715-5254000741bd
+  uid: eac24249-95d3-42eb-9e5b-e0008b00bb72
 ---
 apiVersion: v1
 data:
@@ -1043,20 +2233,87 @@ data:
   v3.2-pr: "27"
   v3.3-alpha: "23"
   v3.3-pr: "12"
-  v3.3-release: "2"
+  v3.3-release: "3"
   v3.4-alpha: "77"
   v3.4-pr: "36"
-  v3.4-release: "3"
-  v3.5-alpha: "17"
+  v3.4-release: "23"
+  v3.5-alpha: "223"
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-27T09:21:49Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.14.0-pr.3-pr: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.3-release: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-20T07:22:43Z"
   name: alauda-gitlab-ait-chart-elasticsearch
   namespace: ait
-  resourceVersion: "728331545"
+  resourceVersion: "156043429"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-elasticsearch
-  uid: 99cfe501-cfea-11ea-b53c-525400a3909c
+  uid: 75ff9171-1b6d-4e5f-80bf-a018dd9368ba
+---
+apiVersion: v1
+data:
+  v3.5-release: "4"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-31T03:52:19Z"
+  name: alauda-gitlab-ait-chart-freeze-base-operator-test
+  namespace: ait
+  resourceVersion: "154219762"
+  selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-freeze-base-operator-test
+  uid: 5600eaac-2e83-40a2-937d-a5b74471b5f0
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "0"
+  v3.5-release: "0"
+  v3.6-release: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-29T01:16:58Z"
+  name: alauda-gitlab-ait-chart-freeze-test
+  namespace: ait
+  resourceVersion: "153326258"
+  selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-freeze-test
+  uid: b61256a2-3a08-4522-8d2a-d9bb3d03658a
 ---
 apiVersion: v1
 data:
@@ -1064,24 +2321,51 @@ data:
   v2.15-pr: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-25T10:41:57Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-chart-gatekeeper
   namespace: ait
-  resourceVersion: "418097641"
+  resourceVersion: "99451205"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-gatekeeper
-  uid: 9986983a-e6bf-11ea-b715-5254000741bd
+  uid: bf19947a-adbc-4221-bd0d-ab365dbb3fe3
 ---
 apiVersion: v1
 data:
   v2.15-pr: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-10T03:25:16Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:26Z"
+  creationTimestamp: "2021-04-09T09:55:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:26Z"
   name: alauda-gitlab-ait-chart-gatekeeper-config
   namespace: ait
-  resourceVersion: "418110625"
+  resourceVersion: "99451206"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-gatekeeper-config
-  uid: ad3c172b-110d-475a-b8a8-d83e91cc4de2
+  uid: 1e24b9c4-de43-46d8-a1dc-8d6f5560e0b1
 ---
 apiVersion: v1
 data:
@@ -1090,12 +2374,27 @@ data:
   v3.3-alpha: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-14T08:31:02Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+        f:v3.0-alpha: {}
+        f:v3.3-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
   name: alauda-gitlab-ait-chart-gpu-manager
   namespace: ait
-  resourceVersion: "541989462"
+  resourceVersion: "99451207"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-gpu-manager
-  uid: 107d09c8-f63c-4901-9ea6-617eca8e9175
+  uid: 0922bbe9-7479-4828-bd05-f1cfa905059e
 ---
 apiVersion: v1
 data:
@@ -1117,16 +2416,55 @@ data:
   v3.4-alpha: "74"
   v3.4-pr: "11"
   v3.4-release: "3"
-  v3.5-alpha: "17"
+  v3.5-alpha: "207"
   v3.5-pr: "5"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-28T03:58:01Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-18T07:35:50Z"
   name: alauda-gitlab-ait-chart-kafka-zookeeper
   namespace: ait
-  resourceVersion: "728343546"
+  resourceVersion: "156041874"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kafka-zookeeper
-  uid: 87dcaa14-d086-11ea-b53c-525400a3909c
+  uid: 3db80d75-aaa2-4b38-957e-eb72d94d4f99
 ---
 apiVersion: v1
 data:
@@ -1158,12 +2496,50 @@ data:
   v3.5-pr: "29"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-31T06:59:02Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-alpha: {}
+        f:v3.0-beta: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0-zsyh: {}
+        f:v3.0.15-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-alphas: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
   name: alauda-gitlab-ait-chart-kube-prometheus
   namespace: ait
-  resourceVersion: "729064228"
+  resourceVersion: "99451209"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kube-prometheus
-  uid: 50c64ff4-d2fb-11ea-b715-5254000741bd
+  uid: c03e403d-3c56-415f-ae98-83d65f239fac
 ---
 apiVersion: v1
 data:
@@ -1172,12 +2548,27 @@ data:
   v3.5-alpha: "16"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-24T16:11:11Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.4-alpha: {}
+        f:v3.5-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
   name: alauda-gitlab-ait-chart-kube-virt
   namespace: ait
-  resourceVersion: "728345728"
+  resourceVersion: "99451210"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kube-virt
-  uid: d498b224-fd90-41a9-9952-01f31db3f8dc
+  uid: 07c5e8f7-a010-43d3-8018-5319740c6819
 ---
 apiVersion: v1
 data:
@@ -1191,15 +2582,45 @@ data:
   v3.3-release: "2"
   v3.4-alpha: "70"
   v3.4-release: "0"
-  v3.5-alpha: "16"
+  v3.5-alpha: "28"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-28T07:09:18Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-release: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v3.0-alpha: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-19T08:12:01Z"
   name: alauda-gitlab-ait-chart-kubefed
   namespace: ait
-  resourceVersion: "728345657"
+  resourceVersion: "154975002"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-kubefed
-  uid: 40a82cb7-d0a1-11ea-a82a-525400df0ff6
+  uid: e59e80b7-2393-47d8-b074-8414465c3a24
 ---
 apiVersion: v1
 data:
@@ -1209,12 +2630,28 @@ data:
   v3.5-alpha: "16"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-10T07:57:11Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.4-alpha: {}
+        f:v3.5-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
   name: alauda-gitlab-ait-chart-nginx-ingress
   namespace: ait
-  resourceVersion: "728346848"
+  resourceVersion: "99451213"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-nginx-ingress
-  uid: 18ed5297-dadf-11ea-8864-525400a3909c
+  uid: 22603695-fa50-4b4c-924a-6af72d47f828
 ---
 apiVersion: v1
 data:
@@ -1236,15 +2673,53 @@ data:
   v3.4-alpha: "75"
   v3.4-pr: "43"
   v3.4-release: "5"
-  v3.5-alpha: "16"
+  v3.5-alpha: "17"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-31T07:12:36Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13.1-release: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-alpha: {}
+        f:v3.0-beta: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-06-02T01:35:27Z"
   name: alauda-gitlab-ait-chart-prometheus-operator
   namespace: ait
-  resourceVersion: "728347169"
+  resourceVersion: "156067625"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-prometheus-operator
-  uid: 3635d929-d2fd-11ea-b53c-525400a3909c
+  uid: 307a34f9-1c64-46bf-b660-d825c3a36b16
 ---
 apiVersion: v1
 data:
@@ -1260,12 +2735,34 @@ data:
   v3.5-alpha: "16"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-20T06:57:21Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
   name: alauda-gitlab-ait-chart-reloader
   namespace: ait
-  resourceVersion: "728347164"
+  resourceVersion: "99451215"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-reloader
-  uid: 652cced4-e2b2-11ea-8864-525400a3909c
+  uid: c1f41336-f23e-45ab-b5bb-2b68ef4dacc7
 ---
 apiVersion: v1
 data:
@@ -1288,16 +2785,68 @@ data:
   v3.4-alpha: "88"
   v3.4-pr: "75"
   v3.4-release: "3"
-  v3.5-alpha: "17"
+  v3.5-alpha: "24"
   v3.5-pr: "12"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-27T06:57:46Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:27Z"
+  creationTimestamp: "2021-04-09T09:55:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-hw: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-31T03:54:55Z"
   name: alauda-gitlab-ait-chart-sentry
   namespace: ait
-  resourceVersion: "728337073"
+  resourceVersion: "156128515"
   selfLink: /api/v1/namespaces/ait/configmaps/alauda-gitlab-ait-chart-sentry
-  uid: 7a38eeae-cfd6-11ea-a82a-525400df0ff6
+  uid: 6fee5b8b-4626-4244-b7da-9428322af2de
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "15"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-26T10:38:27Z"
+  name: alauda-gitlab-alauda-operator-manifests
+  namespace: alauda
+  resourceVersion: "156043945"
+  selfLink: /api/v1/namespaces/alauda/configmaps/alauda-gitlab-alauda-operator-manifests
+  uid: f4de1aae-1d54-4cee-979c-583d07f52c6d
 ---
 apiVersion: v1
 data:
@@ -1314,12 +2863,35 @@ data:
   v3.4-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-20T23:48:22Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-asm-init
   namespace: asm
-  resourceVersion: "718335478"
+  resourceVersion: "99452178"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-asm-init
-  uid: a1d7f95b-e33f-11ea-8864-525400a3909c
+  uid: a7071005-be93-4110-ba81-305c4ad7d9a8
 ---
 apiVersion: v1
 data:
@@ -1342,12 +2914,41 @@ data:
   v3.4-release: "2"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-05T05:25:19Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.3.0-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-cluster-asm
   namespace: asm
-  resourceVersion: "719967496"
+  resourceVersion: "99452179"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-cluster-asm
-  uid: 0db7e755-d6dc-11ea-b715-5254000741bd
+  uid: 646463a1-b454-41e6-8e40-8ee84003fa7d
 ---
 apiVersion: v1
 data:
@@ -1362,12 +2963,33 @@ data:
   v3.3-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-02T06:21:01Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v1.0-alpha: {}
+        f:v1.1-alpha: {}
+        f:v1.7-alpha: {}
+        f:v2.0-alpha: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-consul
   namespace: asm
-  resourceVersion: "591093326"
+  resourceVersion: "99452180"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-consul
-  uid: 78b971f8-ece4-11ea-b715-5254000741bd
+  uid: cbead3d5-ecc2-4ebb-85b2-55d3f164ef47
 ---
 apiVersion: v1
 data:
@@ -1380,12 +3002,31 @@ data:
   v3.2-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-05T06:34:48Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-flagger
   namespace: asm
-  resourceVersion: "521632854"
+  resourceVersion: "99452181"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-flagger
-  uid: c23ae04c-d6e5-11ea-b715-5254000741bd
+  uid: b59e14e8-ec5a-4f7c-ace3-04563108cf05
 ---
 apiVersion: v1
 data:
@@ -1406,16 +3047,54 @@ data:
   v3.4-alpha: "125"
   v3.4-pr: "559"
   v3.4-release: "73"
-  v3.5-alpha: "31"
+  v3.5-alpha: "496"
   v3.5-pr: "123"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-05T03:28:28Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-07T06:40:46Z"
   name: alauda-gitlab-micro-service-chart-global-asm
   namespace: asm
-  resourceVersion: "729298186"
+  resourceVersion: "149643567"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-global-asm
-  uid: ba61e270-d6cb-11ea-b715-5254000741bd
+  uid: 01974414-a803-4b8b-83e1-b1e44e0ed6b9
 ---
 apiVersion: v1
 data:
@@ -1435,12 +3114,38 @@ data:
   v3.4-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-19T02:50:26Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0-replease: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-istio-install
   namespace: asm
-  resourceVersion: "718339773"
+  resourceVersion: "99452183"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-istio-install
-  uid: bc48dc43-e1c6-11ea-a82a-525400df0ff6
+  uid: 4201f240-a1b0-4f4c-b1ea-7c8cd9f141ea
 ---
 apiVersion: v1
 data:
@@ -1453,12 +3158,31 @@ data:
   v3.4-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-05T06:51:38Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v3.0-release: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-jaeger-operator
   namespace: asm
-  resourceVersion: "718340034"
+  resourceVersion: "99452184"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-jaeger-operator
-  uid: 1c7c40b6-d6e8-11ea-a82a-525400df0ff6
+  uid: 1fda1d7d-29f2-4179-8a08-5937cb175c2e
 ---
 apiVersion: v1
 data:
@@ -1472,12 +3196,32 @@ data:
   v3.3-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-03T10:50:59Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:39Z"
+  creationTimestamp: "2021-04-09T09:56:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.0-alpha: {}
+        f:v2.0.0-alpha.0-alpha: {}
+        f:v2.0.0-alpha.0.0-alpha.2-alpha: {}
+        f:v2.5-alpha: {}
+        f:v2.15-alpha: {}
+        f:v3.0-release: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:39Z"
   name: alauda-gitlab-micro-service-chart-kong
   namespace: asm
-  resourceVersion: "591309938"
+  resourceVersion: "99452185"
   selfLink: /api/v1/namespaces/asm/configmaps/alauda-gitlab-micro-service-chart-kong
-  uid: 5a422b21-edd3-11ea-b715-5254000741bd
+  uid: 6e0bcb38-2bad-40a8-bdaf-444aa5afeff3
 ---
 apiVersion: v1
 data:
@@ -1495,15 +3239,49 @@ data:
   v3.3-release: "14"
   v3.4-alpha: "86"
   v3.4-release: "23"
-  v3.5-alpha: "32"
+  v3.5-alpha: "46"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-24T08:32:12Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-beta: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v3.0-hw: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-20T05:47:49Z"
   name: alauda-gitlab-alaudatest-ares-chart
   namespace: automation
-  resourceVersion: "729274086"
+  resourceVersion: "156042143"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-ares-chart
-  uid: 2c1cb75b-cd88-11ea-b715-5254000741bd
+  uid: 4c26d122-f428-4ffb-9013-68339f8157d6
 ---
 apiVersion: v1
 data:
@@ -1518,14 +3296,46 @@ data:
   v3.3-release: "0"
   v3.4-alpha: "0"
   v3.4-release: "0"
+  v3.5-alpha: "20"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-24T10:38:00Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-beta: {}
+        f:v2.14-beta: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-20T06:33:26Z"
   name: alauda-gitlab-alaudatest-chart-artemis
   namespace: automation
-  resourceVersion: "697466392"
+  resourceVersion: "156041916"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-chart-artemis
-  uid: bf1f313f-cd99-11ea-b715-5254000741bd
+  uid: 13fc68db-36db-4f3c-ad90-170030ceb79f
 ---
 apiVersion: v1
 data:
@@ -1534,14 +3344,40 @@ data:
   v3.0-release: "1"
   v3.3-release: "1"
   v3.4-alpha: "0"
+  v3.5-alpha: "12"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-22T12:05:02Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-release: {}
+        f:v3.0-release: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-19T06:19:46Z"
   name: alauda-gitlab-alaudatest-chart-helloworld
   namespace: automation
-  resourceVersion: "699987393"
+  resourceVersion: "156043269"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-chart-helloworld
-  uid: b557b21b-e46f-11ea-a82a-525400df0ff6
+  uid: 9519a99d-b9df-4391-9e2a-157290eab91d
 ---
 apiVersion: v1
 data:
@@ -1549,15 +3385,39 @@ data:
   v3.3-alpha: "0"
   v3.4-alpha: "1"
   v3.4-pr: "0"
-  v3.5-alpha: "0"
+  v3.5-alpha: "13"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-11-04T07:30:26Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-20T05:50:21Z"
   name: alauda-gitlab-alaudatest-redis-benchmark-chart
   namespace: automation
-  resourceVersion: "710422601"
+  resourceVersion: "156041824"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-redis-benchmark-chart
-  uid: 63c458d5-d0df-4b30-a081-7c966d1d0781
+  uid: 39371b80-5670-46aa-bd73-66b9cd3ac593
 ---
 apiVersion: v1
 data:
@@ -1577,16 +3437,53 @@ data:
   v3.3-release: "12"
   v3.4-alpha: "11"
   v3.4-pr: "41"
-  v3.5-alpha: "2"
+  v3.5-alpha: "15"
   v3.5-pr: "6"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-23T09:58:54Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-beta: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: helm-devops-linux-amd64
+    operation: Update
+    time: "2021-05-19T06:02:32Z"
   name: alauda-gitlab-alaudatest-stability-chart
   namespace: automation
-  resourceVersion: "726417158"
+  resourceVersion: "156041852"
   selfLink: /api/v1/namespaces/automation/configmaps/alauda-gitlab-alaudatest-stability-chart
-  uid: 1e700545-cccb-11ea-b53c-525400a3909c
+  uid: 7bab4475-4d92-44d1-b1a2-666ca0b62e1a
 ---
 apiVersion: v1
 data:
@@ -1594,12 +3491,26 @@ data:
   v2.14-pr: "43"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-14T06:47:46Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-chart
   namespace: coding
-  resourceVersion: "389086435"
+  resourceVersion: "99451984"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart
-  uid: 0fbc07c6-ddfa-11ea-8864-525400a3909c
+  uid: 05b82a47-ad7a-4be9-97e2-47a9a61643ef
 ---
 apiVersion: v1
 data:
@@ -1613,14 +3524,36 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-14T06:47:46Z","name":"alauda-gitlab-coding-coding-chart--coding-artifacts","namespace":"coding","resourceVersion":"389086435","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart","uid":"0fbc07c6-ddfa-11ea-8864-525400a3909c"}}
-  creationTimestamp: "2020-09-01T05:09:05Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"16","v2.14-pr":"43","v2.15-pr":"6","v3.0-pr":"4","v3.0-release":"9","v3.2-alpha":"2","v3.2-pr":"3"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-01T05:09:05Z","name":"alauda-gitlab-coding-coding-chart--coding-artifacts","namespace":"coding","resourceVersion":"488679901","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-artifacts","uid":"423fad9a-ec11-11ea-886a-525400a3909c"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-chart--coding-artifacts
   namespace: coding
-  resourceVersion: "488679901"
+  resourceVersion: "99451985"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-artifacts
-  uid: 423fad9a-ec11-11ea-886a-525400a3909c
+  uid: f7ce3118-d8c0-4640-81fa-eb78d5e5c7d4
 ---
 apiVersion: v1
 data:
@@ -1634,14 +3567,36 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-14T06:47:46Z","name":"alauda-gitlab-coding-coding-chart--coding-base","namespace":"coding","resourceVersion":"389086435","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart","uid":"0fbc07c6-ddfa-11ea-8864-525400a3909c"}}
-  creationTimestamp: "2020-09-04T04:55:41Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43","v2.15-pr":"10","v3.0-pr":"10","v3.0-release":"13","v3.2-alpha":"2","v3.2-pr":"3"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-04T04:55:41Z","name":"alauda-gitlab-coding-coding-chart--coding-base","namespace":"coding","resourceVersion":"488683906","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-base","uid":"e210fa4b-ee6a-11ea-a845-525400df0ff6"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-chart--coding-base
   namespace: coding
-  resourceVersion: "488683906"
+  resourceVersion: "99451986"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-base
-  uid: e210fa4b-ee6a-11ea-a845-525400df0ff6
+  uid: 61d8cbde-9958-4b7f-80bb-981729f252e6
 ---
 apiVersion: v1
 data:
@@ -1655,14 +3610,36 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-14T06:47:46Z","name":"alauda-gitlab-coding-coding-chart--coding-cd","namespace":"coding","resourceVersion":"389086435","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart","uid":"0fbc07c6-ddfa-11ea-8864-525400a3909c"}}
-  creationTimestamp: "2020-09-04T04:57:03Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43","v2.15-pr":"10","v3.0-pr":"0","v3.0-release":"2","v3.2-alpha":"1","v3.2-pr":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-04T04:57:03Z","name":"alauda-gitlab-coding-coding-chart--coding-cd","namespace":"coding","resourceVersion":"468453364","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-cd","uid":"12ab96dd-ee6b-11ea-a845-525400df0ff6"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-chart--coding-cd
   namespace: coding
-  resourceVersion: "468453364"
+  resourceVersion: "99451987"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-cd
-  uid: 12ab96dd-ee6b-11ea-a845-525400df0ff6
+  uid: f0f47306-749b-44f1-8a2c-90d528a12b66
 ---
 apiVersion: v1
 data:
@@ -1676,14 +3653,36 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-14T06:47:46Z","name":"alauda-gitlab-coding-coding-chart--coding-ci","namespace":"coding","resourceVersion":"389086435","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart","uid":"0fbc07c6-ddfa-11ea-8864-525400a3909c"}}
-  creationTimestamp: "2020-09-04T05:01:02Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43","v2.15-pr":"10","v3.0-pr":"11","v3.0-release":"9","v3.2-alpha":"4","v3.2-pr":"4"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-04T05:01:02Z","name":"alauda-gitlab-coding-coding-chart--coding-ci","namespace":"coding","resourceVersion":"495729123","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-ci","uid":"a17f6f02-ee6b-11ea-a845-525400df0ff6"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-chart--coding-ci
   namespace: coding
-  resourceVersion: "495729123"
+  resourceVersion: "99451988"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-ci
-  uid: a17f6f02-ee6b-11ea-a845-525400df0ff6
+  uid: 0ad3d801-bb37-4c32-a0b0-75e0fae57ad7
 ---
 apiVersion: v1
 data:
@@ -1697,14 +3696,36 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-14T06:47:46Z","name":"alauda-gitlab-coding-coding-chart--coding-testing","namespace":"coding","resourceVersion":"389086435","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart","uid":"0fbc07c6-ddfa-11ea-8864-525400a3909c"}}
-  creationTimestamp: "2020-09-04T05:06:00Z"
+      {"apiVersion":"v1","data":{"v2.14-alpha":"15","v2.14-pr":"43","v2.15-pr":"10","v3.0-pr":"0","v3.0-release":"2","v3.2-alpha":"1","v3.2-pr":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-04T05:06:00Z","name":"alauda-gitlab-coding-coding-chart--coding-testing","namespace":"coding","resourceVersion":"468462173","selfLink":"/api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-testing","uid":"53358ae2-ee6c-11ea-b715-5254000741bd"}}
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-chart--coding-testing
   namespace: coding
-  resourceVersion: "468462173"
+  resourceVersion: "99451989"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-chart--coding-testing
-  uid: 53358ae2-ee6c-11ea-b715-5254000741bd
+  uid: 6ca2e513-505b-42f2-806a-2efb00b783e2
 ---
 apiVersion: v1
 data:
@@ -1717,37 +3738,31 @@ data:
   v3.2-pr: "17"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-06T09:01:18Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:25Z"
+  creationTimestamp: "2021-04-09T09:56:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:25Z"
   name: alauda-gitlab-coding-coding-operator-chart
   namespace: coding
-  resourceVersion: "498163943"
+  resourceVersion: "99451990"
   selfLink: /api/v1/namespaces/coding/configmaps/alauda-gitlab-coding-coding-operator-chart
-  uid: 644868c9-d7c3-11ea-b715-5254000741bd
----
-apiVersion: v1
-data:
-  v2.15-alpha: "47"
-  v2.15-pr: "317"
-  v3.0-pr: "190"
-  v3.0-release: "125"
-  v3.2-alpha: "34"
-  v3.2-pr: "219"
-  v3.3-alpha: "77"
-  v3.3-pr: "348"
-  v3.3-release: "51"
-  v3.4-alpha: "105"
-  v3.4-pr: "443"
-  v3.4-release: "35"
-  v3.5-alpha: "35"
-  v3.5-pr: "53"
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2020-09-04T03:46:53Z"
-  name: alauda-gitlab-alauda-operator-manifests
-  namespace: common
-  resourceVersion: "729339951"
-  selfLink: /api/v1/namespaces/common/configmaps/alauda-gitlab-alauda-operator-manifests
-  uid: 45529830-ee61-11ea-886a-525400a3909c
+  uid: 53eee784-7d5b-4eed-be3e-8bfa5901df29
 ---
 apiVersion: v1
 data:
@@ -1759,26 +3774,27 @@ data:
   v2.15-beta: "2"
   v2.15-pr: "176"
   v2.15-release: "1"
-  v3.0-pr: "152"
-  v3.0-release: "72"
+  v3.0-pr: "151"
+  v3.0-release: "70"
   v3.2-alpha: "62"
   v3.2-pr: "307"
   v3.3-alpha: "81"
   v3.3-pr: "395"
-  v3.3-release: "40"
-  v3.4-alpha: "140"
-  v3.4-pr: "739"
-  v3.4-release: "40"
-  v3.5-alpha: "44"
-  v3.5-pr: "250"
+  v3.3-release: "101"
+  v3.4-alpha: "108"
+  v3.4-pr: "531"
+  v3.5-alpha: "65"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-04T10:48:18Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-03-09T06:09:58Z"
+  creationTimestamp: "2021-03-09T06:09:58Z"
   name: alauda-gitlab-devops-devops-chart
   namespace: devops
-  resourceVersion: "729221895"
+  resourceVersion: "156044236"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-chart
-  uid: 0207dbc4-d640-11ea-a82a-525400df0ff6
+  uid: bb90daa1-9d10-4a18-863d-b096fccf2460
 ---
 apiVersion: v1
 data:
@@ -1791,12 +3807,31 @@ data:
   v3.5-pr: "10"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-29T10:16:03Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator
   namespace: devops
-  resourceVersion: "729330222"
+  resourceVersion: "99451234"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator
-  uid: 7bdbd23d-64c0-47ad-b5af-e73f780bbab1
+  uid: 5ba47af1-31c8-4ae9-ba97-a022b4547ee5
 ---
 apiVersion: v1
 data:
@@ -1809,12 +3844,31 @@ data:
   v3.5-pr: "10"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-23T08:39:22Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-gitea
   namespace: devops
-  resourceVersion: "729331424"
+  resourceVersion: "99451235"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitea
-  uid: 8cc3c441-dc5e-4ab3-87ec-f6fe5b9d7195
+  uid: f4fc59a3-2970-4988-b722-9315c44e29f8
 ---
 apiVersion: v1
 data:
@@ -1827,14 +3881,35 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v3.3-alpha":"1","v3.3-pr":"0","v3.3-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-12-29T10:16:03Z","name":"alauda-gitlab-devops-devops-tool-operator--charts-gitlab-ce","namespace":"devops","resourceVersion":"591933178","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator","uid":"7bdbd23d-64c0-47ad-b5af-e73f780bbab1"}}
-  creationTimestamp: "2021-01-04T17:20:33Z"
+      {"apiVersion":"v1","data":{"v3.3-alpha":"1","v3.3-pr":"1","v3.3-release":"2","v3.4-alpha":"6","v3.4-pr":"7","v3.4-release":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2021-01-04T17:20:33Z","name":"alauda-gitlab-devops-devops-tool-operator--charts-gitlab-ce","namespace":"devops","resourceVersion":"725076078","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitlab-ce","uid":"cf3db0af-c7e4-48ab-963c-959f1a169882"}}
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-gitlab-ce
   namespace: devops
-  resourceVersion: "725076078"
+  resourceVersion: "99451236"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitlab-ce
-  uid: cf3db0af-c7e4-48ab-963c-959f1a169882
+  uid: 3ce351e8-215e-4d02-b4cd-e1068dda948e
 ---
 apiVersion: v1
 data:
@@ -1848,12 +3923,32 @@ data:
   v3.5-pr: "10"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-04T09:07:38Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-gitlab-official
   namespace: devops
-  resourceVersion: "729330285"
+  resourceVersion: "99451237"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitlab-official
-  uid: dcf72633-7c36-4730-b72c-3c813c0b1edb
+  uid: 3c726d38-5c5c-4198-8824-cf867ca31c0b
 ---
 apiVersion: v1
 data:
@@ -1868,14 +3963,37 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v3.3-alpha":"1","v3.3-pr":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-12-29T10:16:03Z","name":"alauda-gitlab-devops-devops-tool-operator--charts-harbor","namespace":"devops","resourceVersion":"591155654","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator","uid":"7bdbd23d-64c0-47ad-b5af-e73f780bbab1"}}
-  creationTimestamp: "2021-01-04T17:17:14Z"
+      {"apiVersion":"v1","data":{"v3.3-alpha":"1","v3.3-pr":"0","v3.3-release":"0","v3.4-alpha":"3","v3.4-pr":"49","v3.4-release":"2","v3.5-alpha":"1","v3.5-pr":"11"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2021-01-04T17:17:14Z","name":"alauda-gitlab-devops-devops-tool-operator--charts-harbor","namespace":"devops","resourceVersion":"729330903","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-harbor","uid":"a391cf82-8dd5-48e5-bc0f-49ff5516cf36"}}
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-harbor
   namespace: devops
-  resourceVersion: "729330903"
+  resourceVersion: "99451238"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-harbor
-  uid: a391cf82-8dd5-48e5-bc0f-49ff5516cf36
+  uid: 0a461495-e93d-4f3b-a2bb-1198be5dcff0
 ---
 apiVersion: v1
 data:
@@ -1889,12 +4007,32 @@ data:
   v3.5-pr: "45"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-18T03:43:06Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+        f:v3.5-alpha: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-jenkins
   namespace: devops
-  resourceVersion: "729329388"
+  resourceVersion: "99451239"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-jenkins
-  uid: 58ac046a-a6df-422c-a7a5-d715fbffffca
+  uid: 5d4fd191-5667-4a0b-bb3a-5f2eac47261b
 ---
 apiVersion: v1
 data:
@@ -1906,12 +4044,40 @@ data:
   v3.4-release: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-23T02:12:06Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-nexus
   namespace: devops
-  resourceVersion: "729330204"
+  resourceVersion: "99451240"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-nexus
-  uid: 3ec1b20a-401a-4217-867a-e216e4513336
+  uid: 522a7143-6e9d-4591-863e-057b97080e34
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-27T08:37:19Z"
+  name: alauda-gitlab-devops-devops-tool-operator--charts-sonarqube
+  namespace: devops
+  resourceVersion: "149873885"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-sonarqube
+  uid: f448e0fd-4bc5-4a2b-9287-275d1f58f15c
 ---
 apiVersion: v1
 data:
@@ -1923,12 +4089,126 @@ data:
   v3.4-release: "2"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-12-29T09:16:31Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+        f:v3.4-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-testlink
   namespace: devops
-  resourceVersion: "729330619"
+  resourceVersion: "99451241"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-testlink
-  uid: 4f8b6807-a523-450e-be5e-79413873d930
+  uid: 3c25f670-8f11-4405-a8d0-072e9e2316cd
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:19:32Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea
+  namespace: devops
+  resourceVersion: "151832306"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea
+  uid: c2e81cab-678d-4673-95cb-f64eef7e8e64
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:19:36Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitlab-ce
+  namespace: devops
+  resourceVersion: "151832347"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitlab-ce
+  uid: 2fa06a24-0ead-48e2-9f5c-5334c267ad0d
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:19:39Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitlab-official
+  namespace: devops
+  resourceVersion: "151832370"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitlab-official
+  uid: 3f251989-fa2c-4e3a-9acf-522b9acdceec
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:19:43Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-harbor
+  namespace: devops
+  resourceVersion: "151832402"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-harbor
+  uid: 195475fe-ecc3-416d-aba6-a3155376211d
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "2"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:23:23Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-jenkins
+  namespace: devops
+  resourceVersion: "154205045"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-jenkins
+  uid: 01f4195d-b272-4df6-9f4a-56dfaade1756
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:23:27Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-nexus
+  namespace: devops
+  resourceVersion: "151835150"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-nexus
+  uid: 14f58d8f-c7ad-4ff8-9a74-8ae5742a49cb
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "3"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:00:09Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-sonarqube
+  namespace: devops
+  resourceVersion: "151835186"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-sonarqube
+  uid: 1300a3d3-aac2-486d-8308-7f62e8cc0f62
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "1"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T08:23:33Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-testlink
+  namespace: devops
+  resourceVersion: "151835210"
+  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-testlink
+  uid: 43e7e4bc-b86d-4e67-966d-91e532b6cf9f
 ---
 apiVersion: v1
 data:
@@ -1949,12 +4229,39 @@ data:
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-07T03:36:44Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-beta: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.4-pr: {}
+        f:v3.5-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-jenkins-chart
   namespace: devops
-  resourceVersion: "719626730"
+  resourceVersion: "99451242"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-jenkins-chart
-  uid: 36f92f31-d85f-11ea-b715-5254000741bd
+  uid: 739574a2-5679-4453-986d-df771b52dab8
 ---
 apiVersion: v1
 data:
@@ -1966,196 +4273,30 @@ data:
   v3.0-release: "2"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-17T03:42:17Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:55:28Z"
+  creationTimestamp: "2021-04-09T09:55:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-beta: {}
+        f:v3.0-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:55:28Z"
   name: alauda-gitlab-devops-thirdparty-chart
   namespace: devops
-  resourceVersion: "432514264"
+  resourceVersion: "99451243"
   selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart
-  uid: a5e57310-e03b-11ea-a82a-525400df0ff6
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-beta: "3"
-  v3.0-release: "3"
-  v3.2-alpha: "0"
-  v3.2-pr: "46"
-  v3.3-alpha: "13"
-  v3.3-pr: "1"
-  v3.4-alpha: "71"
-  v3.5-alpha: "16"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--devenv","namespace":"devops","resourceVersion":"394604630","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-03T08:37:51Z"
-  name: alauda-gitlab-devops-thirdparty-chart--devenv
-  namespace: devops
-  resourceVersion: "728326929"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--devenv
-  uid: c11234d0-edc0-11ea-886a-525400a3909c
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-beta: "3"
-  v3.0-pr: "46"
-  v3.0-release: "19"
-  v3.2-alpha: "0"
-  v3.2-pr: "6"
-  v3.3-alpha: "15"
-  v3.3-pr: "0"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12","v2.15-beta":"3","v3.0-release":"2"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--gitea","namespace":"devops","resourceVersion":"432514264","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-11-03T07:15:41Z"
-  name: alauda-gitlab-devops-thirdparty-chart--gitea
-  namespace: devops
-  resourceVersion: "632728750"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--gitea
-  uid: f28ce078-fcb1-4d82-8fd3-32fa69816bc6
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-alpha: "1"
-  v2.15-beta: "3"
-  v2.15-pr: "1"
-  v3.0-pr: "13"
-  v3.0-release: "11"
-  v3.2-alpha: "3"
-  v3.2-pr: "8"
-  v3.3-alpha: "14"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--gitlab-ce","namespace":"devops","resourceVersion":"394604630","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-17T04:52:53Z"
-  name: alauda-gitlab-devops-thirdparty-chart--gitlab-ce
-  namespace: devops
-  resourceVersion: "687797291"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--gitlab-ce
-  uid: bec2819c-935e-490b-833d-747f73f7cdf4
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-alpha: "5"
-  v2.15-beta: "3"
-  v2.15-pr: "6"
-  v3.0-pr: "9"
-  v3.0-release: "8"
-  v3.2-alpha: "4"
-  v3.2-pr: "3"
-  v3.3-alpha: "14"
-  v3.3-pr: "0"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--harbor","namespace":"devops","resourceVersion":"394604630","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-16T03:26:23Z"
-  name: alauda-gitlab-devops-thirdparty-chart--harbor
-  namespace: devops
-  resourceVersion: "545273606"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--harbor
-  uid: 15d85198-c2dc-48c2-b0bc-e7e06babde55
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-alpha: "2"
-  v2.15-beta: "3"
-  v2.15-pr: "3"
-  v3.0-pr: "15"
-  v3.0-release: "8"
-  v3.2-alpha: "1"
-  v3.2-pr: "3"
-  v3.3-alpha: "16"
-  v3.3-pr: "12"
-  v3.3-release: "0"
-  v3.4-alpha: "0"
-  v3.4-pr: "0"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--nexus","namespace":"devops","resourceVersion":"394604630","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-16T03:32:57Z"
-  name: alauda-gitlab-devops-thirdparty-chart--nexus
-  namespace: devops
-  resourceVersion: "634092976"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--nexus
-  uid: ac5cd072-6ab4-412f-87a1-72168471c58e
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-alpha: "3"
-  v2.15-beta: "3"
-  v2.15-pr: "14"
-  v3.0-pr: "19"
-  v3.0-release: "10"
-  v3.2-alpha: "3"
-  v3.2-pr: "2"
-  v3.3-alpha: "14"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--sonarqube","namespace":"devops","resourceVersion":"394604630","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-16T16:21:23Z"
-  name: alauda-gitlab-devops-thirdparty-chart--sonarqube
-  namespace: devops
-  resourceVersion: "634096614"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--sonarqube
-  uid: c86dc421-195d-47c4-b6e6-b0add35b66f8
----
-apiVersion: v1
-data:
-  v2.14-alpha: "2"
-  v2.14-beta: "5"
-  v2.14-pr: "4"
-  v2.14-release: "12"
-  v2.15-beta: "4"
-  v3.0-pr: "4"
-  v3.0-release: "8"
-  v3.2-alpha: "3"
-  v3.2-pr: "2"
-  v3.3-alpha: "14"
-kind: ConfigMap
-metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.14-alpha":"2","v2.14-beta":"5","v2.14-pr":"4","v2.14-release":"12","v2.15-beta":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-08-17T03:42:17Z","name":"alauda-gitlab-devops-thirdparty-chart--testlink","namespace":"devops","resourceVersion":"431431557","selfLink":"/api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart","uid":"a5e57310-e03b-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-20T14:11:02Z"
-  name: alauda-gitlab-devops-thirdparty-chart--testlink
-  namespace: devops
-  resourceVersion: "545273611"
-  selfLink: /api/v1/namespaces/devops/configmaps/alauda-gitlab-devops-thirdparty-chart--testlink
-  uid: c5cab399-0b8d-4689-b1c7-1452028890d4
+  uid: 2770e07e-b731-4adb-a2c4-39786552e6c7
 ---
 apiVersion: v1
 data:
@@ -2163,12 +4304,26 @@ data:
   v2.13-pr: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-21T03:43:51Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-daniel-another-chart
   namespace: lab
-  resourceVersion: "327318015"
+  resourceVersion: "99451991"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-another-chart
-  uid: 64b6dbdf-cb04-11ea-b715-5254000741bd
+  uid: 969055cb-2aac-42bb-918e-462a02643e5c
 ---
 apiVersion: v1
 data:
@@ -2191,12 +4346,41 @@ data:
   v2.132-pre-test: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-14T03:58:46Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.5-beta: {}
+        f:v2.10-beta: {}
+        f:v2.10-release: {}
+        f:v2.11-beta: {}
+        f:v2.11-release: {}
+        f:v2.12-beta: {}
+        f:v2.13-alpha: {}
+        f:v2.13-beta: {}
+        f:v2.13-feat: {}
+        f:v2.13-pr: {}
+        f:v2.13-test: {}
+        f:v2.14-alphaaa: {}
+        f:v2.14-beta: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.132-pre-test: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-daniel-chart-test
   namespace: lab
-  resourceVersion: "428550912"
+  resourceVersion: "99451992"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test
-  uid: 511da40c-c586-11ea-a82a-525400df0ff6
+  uid: 37cff959-c8a9-4e5a-85e1-b330ab06a401
 ---
 apiVersion: v1
 data:
@@ -2226,14 +4410,52 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.10-beta":"1","v2.10-release":"1","v2.11-beta":"0","v2.11-release":"0","v2.12-beta":"1","v2.13-alpha":"8","v2.13-beta":"1","v2.13-feat":"4","v2.13-pr":"1","v2.13-test":"1","v2.132-pre-test":"0","v2.14-alphaaa":"0","v2.14-beta":"0","v2.15-alpha":"7","v2.15-pr":"11","v2.15-release":"3","v2.5-beta":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-07-14T03:58:46Z","name":"alauda-gitlab-daniel-chart-test--another","namespace":"lab","resourceVersion":"428550912","selfLink":"/api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test","uid":"511da40c-c586-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-18T10:40:45Z"
+      {"apiVersion":"v1","data":{"v2.10-beta":"1","v2.10-release":"1","v2.11-beta":"0","v2.11-release":"0","v2.12-beta":"1","v2.13-alpha":"8","v2.13-beta":"1","v2.13-feat":"4","v2.13-pr":"1","v2.13-test":"1","v2.132-pre-test":"0","v2.14-alphaaa":"0","v2.14-beta":"0","v2.15-alpha":"7","v2.15-pr":"11","v2.15-release":"4","v2.5-beta":"0","v3.0-alpha":"0","v3.1-huawei":"0","v3.2-alpha":"0","v3.3-alpha":"3","v3.3-hw":"4","v3.3-pr":"5"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-18T10:40:45Z","name":"alauda-gitlab-daniel-chart-test--another","namespace":"lab","resourceVersion":"575612566","selfLink":"/api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test--another","uid":"1012e6c0-3164-461c-8c39-b765ec9ad01c"}}
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.5-beta: {}
+        f:v2.10-beta: {}
+        f:v2.10-release: {}
+        f:v2.11-beta: {}
+        f:v2.11-release: {}
+        f:v2.12-beta: {}
+        f:v2.13-alpha: {}
+        f:v2.13-beta: {}
+        f:v2.13-feat: {}
+        f:v2.13-pr: {}
+        f:v2.13-test: {}
+        f:v2.14-alphaaa: {}
+        f:v2.14-beta: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.132-pre-test: {}
+        f:v3.0-alpha: {}
+        f:v3.1-huawei: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-hw: {}
+        f:v3.3-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-daniel-chart-test--another
   namespace: lab
-  resourceVersion: "575612566"
+  resourceVersion: "99451993"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test--another
-  uid: 1012e6c0-3164-461c-8c39-b765ec9ad01c
+  uid: 2d9bcc45-7db9-4670-81e6-4a83fb6ffc19
 ---
 apiVersion: v1
 data:
@@ -2263,14 +4485,360 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"v2.10-beta":"1","v2.10-release":"1","v2.11-beta":"0","v2.11-release":"0","v2.12-beta":"1","v2.13-alpha":"8","v2.13-beta":"1","v2.13-feat":"4","v2.13-pr":"1","v2.13-test":"1","v2.132-pre-test":"0","v2.14-alphaaa":"0","v2.14-beta":"0","v2.15-alpha":"7","v2.15-pr":"11","v2.15-release":"3","v2.5-beta":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-07-14T03:58:46Z","name":"alauda-gitlab-daniel-chart-test--chart","namespace":"lab","resourceVersion":"428550912","selfLink":"/api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test","uid":"511da40c-c586-11ea-a82a-525400df0ff6"}}
-  creationTimestamp: "2020-09-18T10:42:07Z"
+      {"apiVersion":"v1","data":{"v2.10-beta":"1","v2.10-release":"1","v2.11-beta":"0","v2.11-release":"0","v2.12-beta":"1","v2.13-alpha":"8","v2.13-beta":"1","v2.13-feat":"4","v2.13-pr":"1","v2.13-test":"1","v2.132-pre-test":"0","v2.14-alphaaa":"0","v2.14-beta":"0","v2.15-alpha":"7","v2.15-pr":"11","v2.15-release":"4","v2.5-beta":"0","v3.1-huawei":"0","v3.2-alpha":"0","v3.3-alpha":"3","v3.3-hw":"4","v3.3-pr":"4","v3.4-alpha":"5"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-09-18T10:42:07Z","name":"alauda-gitlab-daniel-chart-test--chart","namespace":"lab","resourceVersion":"595840714","selfLink":"/api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test--chart","uid":"55bc1af3-64c8-4430-8508-64e267323a0e"}}
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.5-beta: {}
+        f:v2.10-beta: {}
+        f:v2.10-release: {}
+        f:v2.11-beta: {}
+        f:v2.11-release: {}
+        f:v2.12-beta: {}
+        f:v2.13-alpha: {}
+        f:v2.13-beta: {}
+        f:v2.13-feat: {}
+        f:v2.13-pr: {}
+        f:v2.13-test: {}
+        f:v2.14-alphaaa: {}
+        f:v2.14-beta: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v2.132-pre-test: {}
+        f:v3.1-huawei: {}
+        f:v3.2-alpha: {}
+        f:v3.3-alpha: {}
+        f:v3.3-hw: {}
+        f:v3.3-pr: {}
+        f:v3.4-alpha: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-daniel-chart-test--chart
   namespace: lab
-  resourceVersion: "595840714"
+  resourceVersion: "99451994"
   selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-daniel-chart-test--chart
-  uid: 55bc1af3-64c8-4430-8508-64e267323a0e
+  uid: 780f4b4f-22cf-4bd7-bc5d-ecb4db463bf5
+---
+apiVersion: v1
+data:
+  v2.14-alpha: "56"
+  v2.14-beta: "42"
+  v2.14-pr: "165"
+  v2.14-release: "9"
+  v2.15-alpha: "44"
+  v2.15-beta: "2"
+  v2.15-pr: "176"
+  v2.15-release: "1"
+  v3.0-pr: "151"
+  v3.0-release: "70"
+  v3.2-alpha: "62"
+  v3.2-pr: "307"
+  v3.3-alpha: "81"
+  v3.3-pr: "395"
+  v3.3-release: "101"
+  v3.4-alpha: "108"
+  v3.4-pr: "531"
+kind: ConfigMap
+metadata:
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-27T09:42:20Z"
+  creationTimestamp: "2021-04-27T09:42:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-beta: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:cpaas.io/creator: {}
+          f:cpaas.io/updated-at: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-27T09:42:20Z"
+  name: alauda-gitlab-devops-devops-chart
+  namespace: lab
+  resourceVersion: "118741039"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-chart
+  uid: 3cf40efe-13eb-4a62-9710-7f165967266a
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T04:41:09Z"
+  name: alauda-gitlab-devops-devops-tool-operator
+  namespace: lab
+  resourceVersion: "150772139"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator
+  uid: 962dc9aa-adca-473d-b4b9-cd6edb1a4280
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-26T07:22:41Z"
+  name: alauda-gitlab-devops-devops-tool-operator--charts-gitlab-official
+  namespace: lab
+  resourceVersion: "148735585"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator--charts-gitlab-official
+  uid: 689ffebd-74e4-4dbb-8c53-b6853a509482
+---
+apiVersion: v1
+data:
+  v0.0-release: "2"
+  v0.3-release: "0"
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-27T15:16:36Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea
+  namespace: lab
+  resourceVersion: "151047925"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea
+  uid: e925e286-9c35-4cf8-a5ad-25c24d2603fb
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T02:47:54Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mariadb
+  namespace: lab
+  resourceVersion: "150686305"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mariadb
+  uid: ed2807bc-0b25-4cc2-bc47-b08250ae21db
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T02:48:06Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mariadb-charts-common
+  namespace: lab
+  resourceVersion: "150686454"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mariadb-charts-common
+  uid: e6c302b0-6837-420f-8b4f-394d82dfc567
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T02:48:14Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-memcached
+  namespace: lab
+  resourceVersion: "150686556"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-memcached
+  uid: 7d9543ef-b9bb-4864-8631-8eed9205f25e
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T02:48:21Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mysql
+  namespace: lab
+  resourceVersion: "150686663"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mysql
+  uid: 6f585698-5df2-48d5-b075-b37edd73c86f
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T02:48:34Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-postgresql
+  namespace: lab
+  resourceVersion: "150686819"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-postgresql
+  uid: 7956fd3c-3d9f-4994-9919-eaaaffe9679f
+---
+apiVersion: v1
+data:
+  v0.0-release: "2"
+  v0.3-release: "0"
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-27T15:16:37Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitlab-ce
+  namespace: lab
+  resourceVersion: "151048070"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitlab-ce
+  uid: 68aef058-aa9f-4a78-a019-b0b6c0d2560a
+---
+apiVersion: v1
+data:
+  v0.0-release: "2"
+  v0.3-release: "0"
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-27T15:16:39Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-gitlab-official
+  namespace: lab
+  resourceVersion: "151048171"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-gitlab-official
+  uid: b9c7376b-ad1c-41d0-ac93-133ae3c388e3
+---
+apiVersion: v1
+data:
+  v0.0-release: "2"
+  v0.3-release: "0"
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-27T15:16:41Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-harbor
+  namespace: lab
+  resourceVersion: "151048333"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-harbor
+  uid: c33e6287-29f6-432e-b65a-56784fa56e55
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T04:46:29Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-jenkins
+  namespace: lab
+  resourceVersion: "151051357"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-jenkins
+  uid: 5116ec14-f11a-4b7c-8525-474d2a527f7e
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T04:46:31Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-nexus
+  namespace: lab
+  resourceVersion: "151051480"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-nexus
+  uid: 68ce0541-4b7f-4603-9c08-8ad393a2bd3f
+---
+apiVersion: v1
+data:
+  v0.1-release: "0"
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T04:46:34Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-sonarqube
+  namespace: lab
+  resourceVersion: "151051568"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-sonarqube
+  uid: 9f739b5a-fe4a-4dac-b43a-25b6a0e0fb62
+---
+apiVersion: v1
+data:
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-28T04:46:36Z"
+  name: alauda-gitlab-devops-devops-tool-operator-charts-testlink
+  namespace: lab
+  resourceVersion: "151051677"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-devops-devops-tool-operator-charts-testlink
+  uid: 75788c1f-36c7-4e5f-88b0-32ce2997faf5
+---
+apiVersion: v1
+data:
+  v2.14-alpha: "56"
+  v2.14-beta: "42"
+  v2.14-pr: "165"
+  v2.14-release: "9"
+  v2.15-alpha: "44"
+  v2.15-beta: "2"
+  v2.15-pr: "176"
+  v2.15-release: "1"
+  v3.0-pr: "151"
+  v3.0-release: "70"
+  v3.2-alpha: "62"
+  v3.2-pr: "307"
+  v3.3-alpha: "81"
+  v3.3-pr: "395"
+  v3.3-release: "101"
+  v3.4-alpha: "108"
+  v3.4-pr: "531"
+  v3.5-alpha: "0"
+kind: ConfigMap
+metadata:
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-27T09:29:22Z"
+  creationTimestamp: "2021-04-27T09:29:22Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v2.14-beta: {}
+        f:v2.14-pr: {}
+        f:v2.14-release: {}
+        f:v2.15-alpha: {}
+        f:v2.15-beta: {}
+        f:v2.15-pr: {}
+        f:v2.15-release: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.3-pr: {}
+        f:v3.3-release: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:cpaas.io/creator: {}
+          f:cpaas.io/updated-at: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-27T09:29:22Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:v3.5-alpha: {}
+    manager: testhelm-devops-linux-amd64
+    operation: Update
+    time: "2021-04-28T04:47:49Z"
+  name: alauda-gitlab-lab-devops-chart--alauda-devops
+  namespace: lab
+  resourceVersion: "119520731"
+  selfLink: /api/v1/namespaces/lab/configmaps/alauda-gitlab-lab-devops-chart--alauda-devops
+  uid: 7d1a941d-27ab-4201-8f14-feebdb04eb9a
 ---
 apiVersion: v1
 data:
@@ -2278,24 +4846,51 @@ data:
   v3.2-alpha: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-21T07:42:01Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-cmq-installer-chart
   namespace: tdsql
-  resourceVersion: "432536998"
+  resourceVersion: "99451996"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-cmq-installer-chart
-  uid: 75044d4e-786d-4ddc-8566-f451948dd7e8
+  uid: 87661a7b-2c28-40bc-b8c2-3eb2e33b1328
 ---
 apiVersion: v1
 data:
   v2.15-alpha: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-28T09:12:07Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-couchdb
   namespace: tdsql
-  resourceVersion: "394229904"
+  resourceVersion: "99451997"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-couchdb
-  uid: 8bce49d5-e90e-11ea-a82a-525400df0ff6
+  uid: fcdbdf6e-74d4-47fc-ab58-5ba98a606682
 ---
 apiVersion: v1
 data:
@@ -2303,12 +4898,26 @@ data:
   v3.0-alpha: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-08T03:07:09Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+        f:v3.0-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-memcached
   namespace: tdsql
-  resourceVersion: "467298627"
+  resourceVersion: "99451998"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-memcached
-  uid: e9ab7825-9d36-45bb-bb78-38b466b23f8d
+  uid: b3da51c7-2b9c-45b6-a2c5-121c00045160
 ---
 apiVersion: v1
 data:
@@ -2317,24 +4926,52 @@ data:
   v3.2.0-pr.3-v3.2: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-28T06:46:36Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.14-alpha: {}
+        f:v3.0-release: {}
+        f:v3.2.0-pr.3-v3.2: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-middleware-product-list-chart
   namespace: tdsql
-  resourceVersion: "575425363"
+  resourceVersion: "99451999"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-middleware-product-list-chart
-  uid: 37ba1c98-e8fa-11ea-8864-525400a3909c
+  uid: 16d9adf2-c84b-4b81-818a-02c2cdf3a41d
 ---
 apiVersion: v1
 data:
   v2.15-alpha: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-15T09:21:17Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-pmem-redis
   namespace: tdsql
-  resourceVersion: "424401894"
+  resourceVersion: "99452000"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-pmem-redis
-  uid: 3facf1a3-66e7-4b6a-8b5d-7cccb4b88f63
+  uid: 64fc972f-0fb3-42dc-bd61-011d3fac96a6
 ---
 apiVersion: v1
 data:
@@ -2342,12 +4979,26 @@ data:
   v3.0-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-09-15T10:22:01Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.15-alpha: {}
+        f:v3.0-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-pmem-redis-chart
   namespace: tdsql
-  resourceVersion: "432662696"
+  resourceVersion: "99452001"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-pmem-redis-chart
-  uid: c17ad1b4-fda7-4b03-8e1a-9330672be32d
+  uid: a6943a2a-c81b-41da-86cc-86c8784b0bef
 ---
 apiVersion: v1
 data:
@@ -2355,12 +5006,26 @@ data:
   v3.4-pr: "18"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2021-02-08T09:42:13Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-rds-chart
   namespace: tdsql
-  resourceVersion: "669314731"
+  resourceVersion: "99452003"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-rds-chart
-  uid: 00aaf2fb-ec88-4e10-9836-63192fd9a955
+  uid: 83f9a1c3-dc31-4e57-b71e-bde53d4004ea
 ---
 apiVersion: v1
 data:
@@ -2378,12 +5043,36 @@ data:
   v3.2.0-pr.5-release: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-30T10:12:40Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.2.0-pr.5-pr: {}
+        f:v3.2.0-pr.5-release: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-redis-installer-chart
   namespace: tdsql
-  resourceVersion: "685011619"
+  resourceVersion: "99452004"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-redis-installer-chart
-  uid: 3382785f-d24d-11ea-a82a-525400df0ff6
+  uid: ec119c7c-59e6-43cb-afdb-5e92e492f04a
 ---
 apiVersion: v1
 data:
@@ -2405,28 +5094,40 @@ data:
   v3.4-pr: "1"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-24T05:33:17Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:56:26Z"
+  creationTimestamp: "2021-04-09T09:56:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v2.15-alpha: {}
+        f:v2.15-pr: {}
+        f:v3.0-pr: {}
+        f:v3.0-release: {}
+        f:v3.0.12-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+        f:v3.2.0-pr.4.0-pr: {}
+        f:v3.2.0-pr.8.0-pr: {}
+        f:v3.3-alpha: {}
+        f:v3.4-alpha: {}
+        f:v3.4-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:56:26Z"
   name: alauda-gitlab-middleware-tdsql-installer-chart
   namespace: tdsql
-  resourceVersion: "685010028"
+  resourceVersion: "99452005"
   selfLink: /api/v1/namespaces/tdsql/configmaps/alauda-gitlab-middleware-tdsql-installer-chart
-  uid: 2d69e478-cd6f-11ea-b715-5254000741bd
----
-apiVersion: v1
-data:
-  v2.14-alpha: "5"
-  v2.14-beta: "3"
-  v2.14-pr: "7"
-  v2.14-release: "2"
-  v2.14.0-release: "0"
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2020-08-03T05:49:10Z"
-  name: alauda-gitlab-bigdata-ai-chart-ti-matrix-installer
-  namespace: timatrix
-  resourceVersion: "385316928"
-  selfLink: /api/v1/namespaces/timatrix/configmaps/alauda-gitlab-bigdata-ai-chart-ti-matrix-installer
-  uid: 0d66b304-d54d-11ea-b53c-525400a3909c
+  uid: 5654d717-b195-43b6-aa02-4741f4d9bb3b
 ---
 apiVersion: v1
 data:
@@ -2434,12 +5135,26 @@ data:
   v2.14-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-28T10:31:07Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:38:35Z"
+  creationTimestamp: "2021-04-09T09:38:35Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-pr: {}
+        f:v2.14-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:38:35Z"
   name: alauda-gitlab-tsf-tsf-init
   namespace: tsf
-  resourceVersion: "338376555"
+  resourceVersion: "99439110"
   selfLink: /api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-init
-  uid: 72275cb5-d0bd-11ea-a82a-525400df0ff6
+  uid: 053be742-c72c-4687-a22c-1bf507abc33b
 ---
 apiVersion: v1
 data:
@@ -2455,12 +5170,34 @@ data:
   v3.2-pr: "2"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-28T04:32:38Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:38:35Z"
+  creationTimestamp: "2021-04-09T09:38:35Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v1.18-beta: {}
+        f:v1.18-release: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+        f:v3.0-alpha: {}
+        f:v3.0-release: {}
+        f:v3.2-alpha: {}
+        f:v3.2-pr: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2021-04-09T09:38:35Z"
   name: alauda-gitlab-tsf-tsf-operator
   namespace: tsf
-  resourceVersion: "475021022"
+  resourceVersion: "99439111"
   selfLink: /api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-operator
-  uid: 5dd13277-d08b-11ea-b715-5254000741bd
+  uid: cf57bd15-e109-4d17-b181-b6fb3fe9bd58
 ---
 apiVersion: v1
 data:
@@ -2470,10 +5207,32 @@ data:
   v2.14-pr: "0"
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-07-28T10:32:14Z"
+  annotations:
+    cpaas.io/creator: admin
+    cpaas.io/updated-at: "2021-04-09T09:33:17Z"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"v2.13-alpha":"0","v2.13-pr":"0","v2.14-alpha":"0","v2.14-pr":"0"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-07-28T10:32:14Z","name":"alauda-gitlab-tsf-tsf-region","namespace":"tsf","resourceVersion":"344958305","selfLink":"/api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-region","uid":"9a7bc171-d0bd-11ea-a82a-525400df0ff6"}}
+  creationTimestamp: "2021-04-09T09:33:17Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:v2.13-alpha: {}
+        f:v2.13-pr: {}
+        f:v2.14-alpha: {}
+        f:v2.14-pr: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-client-side-apply
+    operation: Update
+    time: "2021-04-09T09:33:17Z"
   name: alauda-gitlab-tsf-tsf-region
   namespace: tsf
-  resourceVersion: "344958305"
+  resourceVersion: "99435326"
   selfLink: /api/v1/namespaces/tsf/configmaps/alauda-gitlab-tsf-tsf-region
-  uid: 9a7bc171-d0bd-11ea-a82a-525400df0ff6
+  uid: f09b2470-9a2f-491f-b557-382c8fae74e3
 ---
