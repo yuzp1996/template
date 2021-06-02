@@ -10,8 +10,7 @@ data:
   v3.3-release: "13"
   v3.4-alpha: "8"
   v3.4-release: "4"
-  v3.5-alpha: "32"
-  v3.5-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -54,7 +53,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-13T07:11:41Z"
@@ -144,6 +143,7 @@ apiVersion: v1
 data:
   v2.13-alpha: "11"
   v2.13-pr: "26"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -184,7 +184,7 @@ data:
   v3.4-alpha: "2"
   v3.4-pr: "12"
   v3.4-release: "4"
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
   v3.5-pr: "6"
 kind: ConfigMap
 metadata:
@@ -231,6 +231,7 @@ data:
   v3.2-alpha: "0"
   v3.3-alpha: "1"
   v3.3-pr: "6"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -272,7 +273,7 @@ data:
   v3.4-alphda: "0"
   v3.4-pr: "399"
   v3.4-release: "35"
-  v3.5-alpha: "45"
+  v3.5-alpha: "500"
   v3.5-pr: "58"
 kind: ConfigMap
 metadata:
@@ -329,6 +330,7 @@ data:
   v3.4-alpha: "0"
   v3.4-pr: "3"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -372,7 +374,7 @@ data:
   v2.15.0-release: "0"
   v3.0-release: "5"
   v3.2-alpha: "0"
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -424,9 +426,8 @@ data:
   v2.15.0-release: "0"
   v3.0-release: "5"
   v3.2-alpha: "0"
-  v3.5-alpha: "3"
+  v3.5-alpha: "500"
   v3.5-pr: "1"
-  v3.5-release: "0"
 kind: ConfigMap
 metadata:
   annotations:
@@ -482,6 +483,7 @@ data:
   v3.3-release: "0"
   v3.3.0-pr-26-pr: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -538,6 +540,7 @@ data:
   v3.4-pr: "4"
   v3.4-release: "0"
   v3.4.0-pr-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -595,6 +598,7 @@ data:
   v3.2-pr: "13"
   v3.3-release: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -656,7 +660,7 @@ data:
   v3.4-alpha: "9"
   v3.4-pr: "9"
   v3.4-release: "0"
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -725,6 +729,7 @@ data:
   v3.3-release: "0"
   v3.4-alpha: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -779,6 +784,7 @@ data:
   v3.2-alpha: "0"
   v3.2-pr: "0"
   v3.3-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -835,6 +841,7 @@ data:
   v3.3-pr: "0"
   v3.3-release: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -895,6 +902,7 @@ data:
   v3.4-alpha: "0"
   v3.4-pr: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -954,6 +962,7 @@ data:
   v3.3-pr: "2"
   v3.3-release: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -1011,6 +1020,7 @@ data:
   v3.3-pr: "2"
   v3.4-pr: "2"
   v3.5-pr: "11"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -1073,7 +1083,7 @@ data:
   v3.3-release: "2"
   v3.4-alpha: "0"
   v3.4-release: "4"
-  v3.5-alpha: "12"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -1112,7 +1122,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-25T03:18:05Z"
@@ -1125,6 +1135,7 @@ metadata:
 apiVersion: v1
 data:
   v3.0-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -1169,7 +1180,7 @@ data:
   v3.4-alpha: "90"
   v3.4-pr: "68"
   v3.4-release: "3"
-  v3.5-alpha: "38"
+  v3.5-alpha: "500"
   v3.5-pr: "34"
 kind: ConfigMap
 metadata:
@@ -1251,7 +1262,7 @@ data:
   v3.4-alpha: "262"
   v3.4-pr: "971"
   v3.4-release: "74"
-  v3.5-alpha: "81"
+  v3.5-alpha: "500"
   v3.5-pr: "157"
 kind: ConfigMap
 metadata:
@@ -1331,7 +1342,7 @@ data:
   v3.4-alpha: "122"
   v3.4-pr: "330"
   v3.4-release: "17"
-  v3.5-alpha: "41"
+  v3.5-alpha: "500"
   v3.5-pr: "31"
 kind: ConfigMap
 metadata:
@@ -1404,7 +1415,7 @@ data:
   v3.4-alpha: "80"
   v3.4-pr: "40"
   v3.4-release: "2"
-  v3.5-alpha: "190"
+  v3.5-alpha: "500"
   v3.5-pr: "2"
 kind: ConfigMap
 metadata:
@@ -1469,7 +1480,7 @@ data:
   v3.3-release: "1"
   v3.4-alpha: "72"
   v3.4-release: "0"
-  v3.5-alpha: "16"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -1921,7 +1932,7 @@ data:
   v3.3-release: "1"
   v3.4-alpha: "72"
   v3.4-release: "0"
-  v3.5-alpha: "16"
+  v3.5-alpha: "500"
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
@@ -1979,7 +1990,7 @@ data:
   v3.3-release: "1"
   v3.4-alpha: "72"
   v3.4-release: "0"
-  v3.5-alpha: "63"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2037,7 +2048,7 @@ data:
   v3.3-release: "2"
   v3.4-alpha: "71"
   v3.4-release: "0"
-  v3.5-alpha: "17"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2095,7 +2106,7 @@ data:
   v3.4-alpha: "83"
   v3.4-pr: "26"
   v3.4-release: "7"
-  v3.5-alpha: "24"
+  v3.5-alpha: "500"
   v3.5-pr: "34"
 kind: ConfigMap
 metadata:
@@ -2163,7 +2174,7 @@ data:
   v3.4-alpha: "78"
   v3.4-pr: "17"
   v3.4-release: "3"
-  v3.5-alpha: "68"
+  v3.5-alpha: "500"
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
@@ -2237,7 +2248,7 @@ data:
   v3.4-alpha: "77"
   v3.4-pr: "36"
   v3.4-release: "23"
-  v3.5-alpha: "223"
+  v3.5-alpha: "500"
   v3.5-pr: "0"
 kind: ConfigMap
 metadata:
@@ -2292,6 +2303,7 @@ metadata:
 apiVersion: v1
 data:
   v3.5-release: "4"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-31T03:52:19Z"
@@ -2303,7 +2315,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
   v3.5-release: "0"
   v3.6-release: "0"
 kind: ConfigMap
@@ -2319,6 +2331,7 @@ apiVersion: v1
 data:
   v2.14-pr: "1"
   v2.15-pr: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2345,6 +2358,7 @@ metadata:
 apiVersion: v1
 data:
   v2.15-pr: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2372,6 +2386,7 @@ data:
   v2.15-alpha: "0"
   v3.0-alpha: "1"
   v3.3-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2416,7 +2431,7 @@ data:
   v3.4-alpha: "74"
   v3.4-pr: "11"
   v3.4-release: "3"
-  v3.5-alpha: "207"
+  v3.5-alpha: "500"
   v3.5-pr: "5"
 kind: ConfigMap
 metadata:
@@ -2492,7 +2507,7 @@ data:
   v3.4-alphas: "0"
   v3.4-pr: "32"
   v3.4-release: "4"
-  v3.5-alpha: "16"
+  v3.5-alpha: "500"
   v3.5-pr: "29"
 kind: ConfigMap
 metadata:
@@ -2545,7 +2560,7 @@ apiVersion: v1
 data:
   v3.3-alpha: "13"
   v3.4-alpha: "71"
-  v3.5-alpha: "16"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2582,7 +2597,7 @@ data:
   v3.3-release: "2"
   v3.4-alpha: "70"
   v3.4-release: "0"
-  v3.5-alpha: "28"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2627,7 +2642,7 @@ data:
   v2.13-pr: "0"
   v3.3-alpha: "12"
   v3.4-alpha: "72"
-  v3.5-alpha: "16"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2673,7 +2688,7 @@ data:
   v3.4-alpha: "75"
   v3.4-pr: "43"
   v3.4-release: "5"
-  v3.5-alpha: "17"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2732,7 +2747,7 @@ data:
   v3.3-release: "1"
   v3.4-alpha: "71"
   v3.4-release: "0"
-  v3.5-alpha: "16"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2785,7 +2800,7 @@ data:
   v3.4-alpha: "88"
   v3.4-pr: "75"
   v3.4-release: "3"
-  v3.5-alpha: "24"
+  v3.5-alpha: "500"
   v3.5-pr: "12"
 kind: ConfigMap
 metadata:
@@ -2838,7 +2853,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "15"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-26T10:38:27Z"
@@ -2861,6 +2876,7 @@ data:
   v3.4-alpha: "1"
   v3.4-pr: "2"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2912,6 +2928,7 @@ data:
   v3.4-alpha: "35"
   v3.4-pr: "145"
   v3.4-release: "2"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -2961,6 +2978,7 @@ data:
   v3.3-alpha: "0"
   v3.3-pr: "0"
   v3.3-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3000,6 +3018,7 @@ data:
   v3.0-release: "7"
   v3.2-alpha: "4"
   v3.2-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3047,7 +3066,7 @@ data:
   v3.4-alpha: "125"
   v3.4-pr: "559"
   v3.4-release: "73"
-  v3.5-alpha: "496"
+  v3.5-alpha: "500"
   v3.5-pr: "123"
 kind: ConfigMap
 metadata:
@@ -3112,6 +3131,7 @@ data:
   v3.4-alpha: "6"
   v3.4-pr: "32"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3156,6 +3176,7 @@ data:
   v3.3-pr: "0"
   v3.3-release: "0"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3194,6 +3215,7 @@ data:
   v3.0-release: "4"
   v3.3-alpha: "0"
   v3.3-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3239,7 +3261,7 @@ data:
   v3.3-release: "14"
   v3.4-alpha: "86"
   v3.4-release: "23"
-  v3.5-alpha: "46"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3296,7 +3318,7 @@ data:
   v3.3-release: "0"
   v3.4-alpha: "0"
   v3.4-release: "0"
-  v3.5-alpha: "20"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3344,7 +3366,7 @@ data:
   v3.0-release: "1"
   v3.3-release: "1"
   v3.4-alpha: "0"
-  v3.5-alpha: "12"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3385,7 +3407,7 @@ data:
   v3.3-alpha: "0"
   v3.4-alpha: "1"
   v3.4-pr: "0"
-  v3.5-alpha: "13"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3437,7 +3459,7 @@ data:
   v3.3-release: "12"
   v3.4-alpha: "11"
   v3.4-pr: "41"
-  v3.5-alpha: "15"
+  v3.5-alpha: "500"
   v3.5-pr: "6"
 kind: ConfigMap
 metadata:
@@ -3489,6 +3511,7 @@ apiVersion: v1
 data:
   v2.14-alpha: "15"
   v2.14-pr: "43"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3521,6 +3544,7 @@ data:
   v3.0-release: "9"
   v3.2-alpha: "2"
   v3.2-pr: "3"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3564,6 +3588,7 @@ data:
   v3.0-release: "13"
   v3.2-alpha: "2"
   v3.2-pr: "3"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3607,6 +3632,7 @@ data:
   v3.0-release: "2"
   v3.2-alpha: "1"
   v3.2-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3650,6 +3676,7 @@ data:
   v3.0-release: "9"
   v3.2-alpha: "4"
   v3.2-pr: "4"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3693,6 +3720,7 @@ data:
   v3.0-release: "2"
   v3.2-alpha: "1"
   v3.2-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3736,6 +3764,7 @@ data:
   v3.0-release: "40"
   v3.2-alpha: "19"
   v3.2-pr: "17"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3783,7 +3812,7 @@ data:
   v3.3-release: "101"
   v3.4-alpha: "108"
   v3.4-pr: "531"
-  v3.5-alpha: "65"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3805,6 +3834,7 @@ data:
   v3.4-pr: "41"
   v3.4-release: "0"
   v3.5-pr: "10"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3842,6 +3872,7 @@ data:
   v3.4-pr: "21"
   v3.4-release: "0"
   v3.5-pr: "10"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3878,6 +3909,7 @@ data:
   v3.4-alpha: "6"
   v3.4-pr: "7"
   v3.4-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -3919,7 +3951,7 @@ data:
   v3.4-alpha: "7"
   v3.4-pr: "46"
   v3.4-release: "1"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
   v3.5-pr: "10"
 kind: ConfigMap
 metadata:
@@ -3958,7 +3990,7 @@ data:
   v3.4-alpha: "3"
   v3.4-pr: "49"
   v3.4-release: "2"
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
   v3.5-pr: "11"
 kind: ConfigMap
 metadata:
@@ -4003,7 +4035,7 @@ data:
   v3.4-alpha: "36"
   v3.4-pr: "138"
   v3.4-release: "17"
-  v3.5-alpha: "4"
+  v3.5-alpha: "500"
   v3.5-pr: "45"
 kind: ConfigMap
 metadata:
@@ -4042,6 +4074,7 @@ data:
   v3.4-alpha: "5"
   v3.4-pr: "19"
   v3.4-release: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4071,6 +4104,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-27T08:37:19Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-sonarqube
@@ -4087,6 +4122,7 @@ data:
   v3.4-alpha: "1"
   v3.4-pr: "14"
   v3.4-release: "2"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4116,7 +4152,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:19:32Z"
@@ -4128,7 +4164,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:19:36Z"
@@ -4140,7 +4176,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:19:39Z"
@@ -4152,7 +4188,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:19:43Z"
@@ -4164,7 +4200,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "2"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:23:23Z"
@@ -4176,7 +4212,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:23:27Z"
@@ -4188,7 +4224,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "3"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:00:09Z"
@@ -4200,7 +4236,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T08:23:33Z"
@@ -4227,6 +4263,7 @@ data:
   v3.3-pr: "36"
   v3.4-pr: "6"
   v3.5-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4271,6 +4308,7 @@ data:
   v2.14-release: "12"
   v2.15-beta: "3"
   v3.0-release: "2"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4302,6 +4340,7 @@ apiVersion: v1
 data:
   v2.13-alpha: "3"
   v2.13-pr: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4344,6 +4383,7 @@ data:
   v2.15-pr: "11"
   v2.15-release: "3"
   v2.132-pre-test: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4407,6 +4447,7 @@ data:
   v3.3-alpha: "3"
   v3.3-hw: "4"
   v3.3-pr: "5"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4482,6 +4523,7 @@ data:
   v3.3-hw: "4"
   v3.3-pr: "4"
   v3.4-alpha: "5"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4551,6 +4593,7 @@ data:
   v3.3-release: "101"
   v3.4-alpha: "108"
   v3.4-pr: "531"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4596,6 +4639,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-28T04:41:09Z"
   name: alauda-gitlab-devops-devops-tool-operator
@@ -4606,6 +4651,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-26T07:22:41Z"
   name: alauda-gitlab-devops-devops-tool-operator--charts-gitlab-official
@@ -4618,7 +4665,7 @@ apiVersion: v1
 data:
   v0.0-release: "2"
   v0.3-release: "0"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-27T15:16:36Z"
@@ -4630,6 +4677,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-28T02:47:54Z"
   name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mariadb
@@ -4640,6 +4689,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-28T02:48:06Z"
   name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mariadb-charts-common
@@ -4650,6 +4701,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-28T02:48:14Z"
   name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-memcached
@@ -4660,6 +4713,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-28T02:48:21Z"
   name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-mysql
@@ -4670,6 +4725,8 @@ metadata:
 ---
 apiVersion: v1
 kind: ConfigMap
+data:
+  v3.5-alpha: "500"
 metadata:
   creationTimestamp: "2021-05-28T02:48:34Z"
   name: alauda-gitlab-devops-devops-tool-operator-charts-gitea-charts-postgresql
@@ -4682,7 +4739,7 @@ apiVersion: v1
 data:
   v0.0-release: "2"
   v0.3-release: "0"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-27T15:16:37Z"
@@ -4696,7 +4753,7 @@ apiVersion: v1
 data:
   v0.0-release: "2"
   v0.3-release: "0"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-27T15:16:39Z"
@@ -4710,7 +4767,7 @@ apiVersion: v1
 data:
   v0.0-release: "2"
   v0.3-release: "0"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-27T15:16:41Z"
@@ -4722,7 +4779,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T04:46:29Z"
@@ -4734,7 +4791,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T04:46:31Z"
@@ -4747,7 +4804,7 @@ metadata:
 apiVersion: v1
 data:
   v0.1-release: "0"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T04:46:34Z"
@@ -4759,7 +4816,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-05-28T04:46:36Z"
@@ -4788,7 +4845,7 @@ data:
   v3.3-release: "101"
   v3.4-alpha: "108"
   v3.4-pr: "531"
-  v3.5-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4844,6 +4901,7 @@ apiVersion: v1
 data:
   v3.0-release: "0"
   v3.2-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4870,6 +4928,7 @@ metadata:
 apiVersion: v1
 data:
   v2.15-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4896,6 +4955,7 @@ apiVersion: v1
 data:
   v2.15-alpha: "0"
   v3.0-alpha: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4924,6 +4984,7 @@ data:
   v2.14-alpha: "6"
   v3.0-release: "0"
   v3.2.0-pr.3-v3.2: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4951,6 +5012,7 @@ metadata:
 apiVersion: v1
 data:
   v2.15-alpha: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -4977,6 +5039,7 @@ apiVersion: v1
 data:
   v2.15-alpha: "1"
   v3.0-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -5004,6 +5067,7 @@ apiVersion: v1
 data:
   v3.4-alpha: "0"
   v3.4-pr: "18"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -5041,6 +5105,7 @@ data:
   v3.2-pr: "20"
   v3.2.0-pr.5-pr: "4"
   v3.2.0-pr.5-release: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -5092,6 +5157,7 @@ data:
   v3.3-alpha: "0"
   v3.4-alpha: "2"
   v3.4-pr: "1"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -5133,6 +5199,7 @@ apiVersion: v1
 data:
   v2.13-pr: "1"
   v2.14-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -5168,6 +5235,7 @@ data:
   v3.0-release: "1"
   v3.2-alpha: "2"
   v3.2-pr: "2"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
@@ -5205,6 +5273,7 @@ data:
   v2.13-pr: "0"
   v2.14-alpha: "0"
   v2.14-pr: "0"
+  v3.5-alpha: "500"
 kind: ConfigMap
 metadata:
   annotations:
